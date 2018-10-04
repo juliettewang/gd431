@@ -1,0 +1,126 @@
+/* scss variables */
+/* Base Classes */
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+section {
+  margin: 20px 15px 20px 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+/* Utility Classes */
+.mt-50 {
+  margin-top: 50px;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* Custom Classes */
+h1 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 15px;
+  margin: 25px 0 10px 0;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 20px 0 5px 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 12px;
+  font-height: 15px;
+  font-weight: 200;
+  margin: 20px 0 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 12px;
+  line-height: 25px;
+  margin: 0;
+}
+
+a {
+  color: #F497AB;
+  text-decoration: none;
+}
+
+strong {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 18px;
+  padding-left: 0;
+  font-size: 12px;
+  line-height: 25px;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+/* Resume Content Float */
+.resume__title {
+  width: 30%;
+  padding: 0 5px 0 0;
+  float: left;
+}
+
+@media only screen and (max-width: 479px) {
+  .resume__title {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+
+.resume__content {
+  width: 60%;
+  padding: 0 5px 0 0;
+  float: right;
+}
+
+@media only screen and (max-width: 479px) {
+  .resume__content {
+    width: 100%;
+    float: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
