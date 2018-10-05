@@ -111,6 +111,10 @@ a {
   }
 }
 
+a:hover, a:focus {
+  color: #e86158;
+}
+
 ul {
   line-height: 1.3rem;
   letter-spacing: 0.2rem;
@@ -491,6 +495,7 @@ ul {
   letter-spacing: 0.1rem;
   margin: 2rem;
   text-transform: lowercase;
+  display: block;
 }
 
 @media only screen and (min-width: 900px) {

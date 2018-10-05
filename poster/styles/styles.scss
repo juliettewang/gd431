@@ -107,6 +107,9 @@ a{
   @media only screen and (min-width: 900px){
     font-size: 0.8rem;
   }
+  &:hover, &:focus{
+    color: rgba($color-red, 10%);
+  }
 }
 
 ul{
@@ -349,6 +352,7 @@ ul{
   letter-spacing: 0.1rem;
   margin: 2rem;
   text-transform: lowercase;
+  display: block;
   @media only screen and (min-width: 900px){
     font-size: 0.8rem;
   }
