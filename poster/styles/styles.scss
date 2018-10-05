@@ -134,6 +134,10 @@ ul{
 .go{
   grid-column: 5/7;
   grid-row: 1/3;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-column: 3/7;
+  }
 }
 
 .title__grade{
@@ -161,6 +165,10 @@ ul{
   grid-column: 6/8;
   grid-row: 1/3;
   text-align: center;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-row: 1/2;
+  }
 }
 
 .title__place{
@@ -173,14 +181,8 @@ ul{
   }
 
   @media only screen and (max-width: 700px) and (min-width: 500px){
-
+    grid-column: 1/7;
   }
-}
-
-.caption__madegoods{
-  grid-column: 2/4;
-  grid-row: 1/2;
-  text-align: center;
 }
 
 // lists
@@ -191,6 +193,12 @@ ul{
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-column: 1/4;
+    grid-row: 10/11;
+  }
+
 }
 
 .list__2{
@@ -199,6 +207,11 @@ ul{
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-column: 4/12;
+    grid-row: 7/12;
+  }
 }
 
 .list__3{
@@ -207,19 +220,38 @@ ul{
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-row: 5/8;
+  }
 }
 
+// extra info
+
 .date-time{
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   letter-spacing: 0.1rem;
   text-align: center;
+  align-self: center;
 
-  @media only screen and (max-width: 730px) {
-    grid-column: 1/5;
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-column: 7/8;
   }
 
 }
+
+.caption__madegoods{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-align: center;
+
+  @media only screen and (max-width: 700px) and (min-width: 500px){
+    grid-column: 1/7;
+    grid-row: 2/3;
+  }
+}
+
 
 .link__socials{
   grid-column: 7/9;
