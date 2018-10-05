@@ -283,9 +283,12 @@ ul {
 
 @media only screen and (max-width: 700px) and (min-width: 500px) {
   .list__3 {
-    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 3;
-    grid-row: 5/8;
+    grid-row: 4/7;
   }
 }
 
@@ -403,6 +406,7 @@ ul {
 
 .footer-logos {
   padding: 2vw;
+  text-align: center;
 }
 
 .img__logo {
