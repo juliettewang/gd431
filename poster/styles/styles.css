@@ -12,8 +12,13 @@ body {
   background-color: #f1eee9;
   font-family: "Inconsolata", monospace;
   color: #040304;
-  max-width: 900px;
   margin: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 1280px;
+  }
 }
 
 .top-section {
@@ -39,6 +44,13 @@ h1 {
   margin: 2rem 0 2rem 0;
 }
 
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
@@ -48,6 +60,13 @@ h2 {
   margin: 0;
 }
 
+@media only screen and (min-width: 900px) {
+  h2 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
 h3 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
@@ -55,6 +74,13 @@ h3 {
   letter-spacing: 0.1rem;
   line-height: 2rem;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 900px) {
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 h4 {
@@ -79,6 +105,12 @@ a {
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 900px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
+
 ul {
   line-height: 1.3rem;
   letter-spacing: 0.2rem;
@@ -100,6 +132,14 @@ ul {
   margin: 0;
   text-transform: uppercase;
   z-index: -1;
+}
+
+@media only screen and (min-width: 900px) {
+  .title__chicago--big {
+    font-size: 12rem;
+    line-height: 12rem;
+    letter-spacing: 1.5rem;
+  }
 }
 
 .chi {
