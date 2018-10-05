@@ -359,8 +359,7 @@ ul{
 .info-circles{
   grid-column: 3/4;
   grid-row: 3/6;
-  font-size: 7px;
-  line-height: 9px;
+  line-height: 0.62rem;
 
   @media only screen and (max-width: 700px){
     grid-column: 2/3;
@@ -368,36 +367,33 @@ ul{
 }
 
 .info-circles__date{
-  @include size(45px,45px);
-  border-radius: 25px;
+  @include size(3rem,3rem);
+  border-radius: 3rem;
   border: 0.1rem solid $color-black;
-  margin: 0 0 10px 0;
-  padding-top: 8px;
+  font-size: 0.05rem;
+  margin: 0 0 0.9rem 0;
+  padding-top: 0.5rem;
   text-align: center;
-  @media only screen and (min-width: 900px){
-    @include size(4rem,4rem);
-    border-radius: 2rem;
-  }
 }
 
 .info-circles__city{
-  @include size(45px,45px);
-  border-radius: 25px;
+  @include size(3rem,3rem);
+  border-radius: 3rem;
   border: 0.1rem solid $color-black;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
-  margin: 0 0 10px 0;
-  padding-top: 16px;
+  margin: 0 0 0.9rem 0;
+  padding-top: 1.1rem;
   text-align: center;
 }
 
 .info-circles__place{
-  @include size(45px,45px);
-  border-radius: 25px;
+  @include size(3rem,3rem);
+  border-radius: 3rem;
   border: 0.1rem solid $color-black;
   font-size: 7px;
-  margin: 0 0 10px 0;
-  padding-top: 13px;
+  margin: 0 0 0.9rem 0;
+  padding-top: 0.9rem;
   text-align: center;
 }
 
