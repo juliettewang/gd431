@@ -493,6 +493,12 @@ ul {
   text-transform: lowercase;
 }
 
+@media only screen and (min-width: 900px) {
+  .link__instagram {
+    font-size: 0.8rem;
+  }
+}
+
 .info-circles {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -520,6 +526,14 @@ ul {
   margin: 0 0 10px 0;
   padding-top: 8px;
   text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .info-circles__date {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
 }
 
 .info-circles__city {

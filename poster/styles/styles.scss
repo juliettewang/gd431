@@ -349,6 +349,9 @@ ul{
   letter-spacing: 0.1rem;
   margin: 2rem;
   text-transform: lowercase;
+  @media only screen and (min-width: 900px){
+    font-size: 0.8rem;
+  }
 }
 
 // small circles with info
@@ -371,6 +374,10 @@ ul{
   margin: 0 0 10px 0;
   padding-top: 8px;
   text-align: center;
+  @media only screen and (min-width: 900px){
+    @include size(4rem,4rem);
+    border-radius: 2rem;
+  }
 }
 
 .info-circles__city{
@@ -404,7 +411,4 @@ ul{
 .img__logo{
   height: 80px;
   margin: 0 4vw 0 4vw;
-  @media only screen and (max-width: 700px){
-  
-  }
 }
