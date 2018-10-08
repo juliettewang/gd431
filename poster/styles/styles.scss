@@ -1,9 +1,9 @@
 // scss variables
 
-$font-condensed: 'Oswald', sans-serif;
-$font-mono: 'Inconsolata', monospace;
 $color-black: #040304;
 $color-red: #E86158;
+$font-condensed: 'Oswald', sans-serif;
+$font-mono: 'Inconsolata', monospace;
 $spacing-margin: 0.75rem;
 
 @mixin size($width,$height){
@@ -23,8 +23,8 @@ html{
 
 body{
   background-color: #f1eee9;
-  font-family: $font-mono;
   color: $color-black;
+  font-family: $font-mono;
   margin: auto;
   @media only screen and (min-width: 900px){
     max-width: 1280px;
@@ -46,10 +46,11 @@ body{
 h1{
   font-family: $font-condensed;
   font-size: 3rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 0.15rem;
   margin: 2rem 0 2rem 0;
+  text-transform: uppercase;
+  
   @media only screen and (min-width: 900px){
     font-size: 4rem;
     letter-spacing: 0.2rem;
@@ -61,10 +62,11 @@ h1{
 h2{
   font-family: $font-condensed;
   font-size: 3rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 0.15rem;
   margin: 0;
+  text-transform: uppercase;
+
   @media only screen and (min-width: 900px){
     font-size: 4rem;
     letter-spacing: 0.2rem;
@@ -73,11 +75,12 @@ h2{
 
 h3{
   font-family: $font-condensed;
-  font-weight: 600;
   font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   line-height: 2rem;
   text-transform: uppercase;
+
   @media only screen and (min-width: 900px){
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
@@ -97,24 +100,26 @@ p{
 }
 
 a{
+  color: $color-black;
   font-family: $font-condensed;
   font-size: 0.6rem;
   font-weight: 600;
-  color: $color-black;
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
-  @media only screen and (min-width: 900px){
-    font-size: 0.8rem;
-  }
+
   &:hover, &:focus{
     color: rgba($color-red, 10%);
+  }
+
+  @media only screen and (min-width: 900px){
+    font-size: 0.8rem;
   }
 }
 
 ul{
-  line-height: 1.3rem;
   letter-spacing: 0.2rem;
+  line-height: 1.3rem;
   padding-left: 0;
 }
 
@@ -143,7 +148,8 @@ ul{
   }
 }
 
-// red chicago decorative text
+// big red chicago text placement
+
 .chi{
   grid-column: 5/10;
   grid-row: 3/5;
@@ -301,14 +307,14 @@ ul{
 
 }
 
-// extra info
+// smaller extra info
 
 .date-time{
+  align-self: center;
   grid-column: 1/5;
   grid-row: 2/3;
   letter-spacing: 0.1rem;
   text-align: center;
-  align-self: center;
 
   @media only screen and (max-width: 700px){
     grid-column: 7/8;
@@ -333,6 +339,7 @@ ul{
 .link__socials{
   grid-column: 7/9;
   grid-row: 4/5;
+  
   @media only screen and (max-width: 500px){
   margin-top: 2.5rem;
   }
@@ -346,13 +353,14 @@ ul{
 }
 
 .link__instagram{
+  display: block;
   font-family: $font-condensed;
   font-size: 0.6rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   margin: 2rem;
   text-transform: lowercase;
-  display: block;
+  
   @media only screen and (min-width: 900px){
     font-size: 0.8rem;
   }
@@ -382,8 +390,8 @@ ul{
 
 .info-circles__city{
   @include size(3rem,3rem);
-  border-radius: 3rem;
   border: 0.1rem solid $color-black;
+  border-radius: 3rem;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   margin: 0 0 0.9rem 0;
@@ -393,8 +401,8 @@ ul{
 
 .info-circles__place{
   @include size(3rem,3rem);
-  border-radius: 3rem;
   border: 0.1rem solid $color-black;
+  border-radius: 3rem;
   font-size: 7px;
   margin: 0 0 0.9rem 0;
   padding-top: 0.9rem;
