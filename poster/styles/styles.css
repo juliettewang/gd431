@@ -477,12 +477,6 @@ ul {
 @media only screen and (max-width: 500px) {
   .link__socials {
     margin-top: 2.5rem;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 4;
-    grid-column: 4/8;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
   }
 }
 
