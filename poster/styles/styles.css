@@ -10,8 +10,8 @@ html {
 
 body {
   background-color: #f1eee9;
-  font-family: "Inconsolata", monospace;
   color: #040304;
+  font-family: "Inconsolata", monospace;
   margin: auto;
 }
 
@@ -38,10 +38,10 @@ body {
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 0.15rem;
   margin: 2rem 0 2rem 0;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 900px) {
@@ -54,10 +54,10 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 0.15rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 900px) {
@@ -69,8 +69,8 @@ h2 {
 
 h3 {
   font-family: "Oswald", sans-serif;
-  font-weight: 600;
   font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   line-height: 2rem;
   text-transform: uppercase;
@@ -96,13 +96,17 @@ p {
 }
 
 a {
+  color: #040304;
   font-family: "Oswald", sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
-  color: #040304;
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+a:hover, a:focus {
+  color: #e86158;
 }
 
 @media only screen and (min-width: 900px) {
@@ -111,13 +115,9 @@ a {
   }
 }
 
-a:hover, a:focus {
-  color: #e86158;
-}
-
 ul {
-  line-height: 1.3rem;
   letter-spacing: 0.2rem;
+  line-height: 1.3rem;
   padding-left: 0;
 }
 
@@ -126,27 +126,27 @@ ul {
   padding-bottom: 0;
 }
 
-.title__chicago--big {
+.title__chicago {
   color: #E86158;
   font-family: "Oswald", sans-serif;
   font-size: 10rem;
   line-height: 10rem;
   letter-spacing: 1.2rem;
-  text-align: center;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
   z-index: -1;
 }
 
 @media only screen and (min-width: 900px) {
-  .title__chicago--big {
+  .title__chicago {
     font-size: 12rem;
     line-height: 12rem;
     letter-spacing: 1.5rem;
   }
 }
 
-.chi {
+.title__chicago--chi {
   -ms-grid-column: 5;
   -ms-grid-column-span: 5;
   grid-column: 5/10;
@@ -156,7 +156,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .chi {
+  .title__chicago--chi {
     -ms-grid-column: 3;
     -ms-grid-column-span: 8;
     grid-column: 3/11;
@@ -164,14 +164,14 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-  .chi {
+  .title__chicago--chi {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3/5;
   }
 }
 
-.ca {
+.title__chicago--ca {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -181,7 +181,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .ca {
+  .title__chicago--ca {
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
     grid-column: 3/6;
@@ -191,7 +191,7 @@ ul {
   }
 }
 
-.go {
+.title__chicago--go {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-column: 5/7;
@@ -201,7 +201,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .go {
+  .title__chicago--go {
     -ms-grid-column: 3;
     -ms-grid-column-span: 4;
     grid-column: 3/7;
@@ -209,7 +209,7 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-  .go {
+  .title__chicago--go {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -319,7 +319,7 @@ ul {
   }
 }
 
-.list__1 {
+.list__jeans {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4/7;
@@ -332,7 +332,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .list__1 {
+  .list__jeans {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1/5;
@@ -343,7 +343,7 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-  .list__1 {
+  .list__jeans {
     -ms-grid-column: 1;
     -ms-grid-column-span: 10;
     grid-column: 1/11;
@@ -353,7 +353,7 @@ ul {
   }
 }
 
-.list__2 {
+.list__clothing {
   -ms-grid-column: 7;
   -ms-grid-column-span: 5;
   grid-column: 7/12;
@@ -366,7 +366,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .list__2 {
+  .list__clothing {
     -ms-grid-column: 4;
     -ms-grid-column-span: 8;
     grid-column: 4/12;
@@ -377,7 +377,7 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-  .list__2 {
+  .list__clothing {
     -ms-grid-column: 1;
     -ms-grid-column-span: 10;
     grid-column: 1/11;
@@ -387,7 +387,7 @@ ul {
   }
 }
 
-.list__3 {
+.list__misc {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-column: 5/7;
@@ -400,7 +400,7 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
-  .list__3 {
+  .list__misc {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
@@ -411,7 +411,7 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-  .list__3 {
+  .list__misc {
     -ms-grid-column: 1;
     -ms-grid-column-span: 8;
     grid-column: 1/9;
@@ -422,6 +422,9 @@ ul {
 }
 
 .date-time {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
@@ -430,9 +433,6 @@ ul {
   grid-row: 2/3;
   letter-spacing: 0.1rem;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -477,6 +477,12 @@ ul {
 @media only screen and (max-width: 500px) {
   .link__socials {
     margin-top: 2.5rem;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/8;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
   }
 }
 
@@ -489,13 +495,13 @@ ul {
 }
 
 .link__instagram {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 0.6rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   margin: 2rem;
   text-transform: lowercase;
-  display: block;
 }
 
 @media only screen and (min-width: 900px) {
@@ -525,10 +531,10 @@ ul {
 .info-circles__date {
   width: 3rem;
   height: 3rem;
-  border-radius: 3rem;
+  border-radius: 50%;
   border: 0.1rem solid #040304;
   font-size: 0.05rem;
-  margin: 0 0 0.9rem 0;
+  margin-bottom: 0.9rem;
   padding-top: 0.5rem;
   text-align: center;
 }
@@ -536,11 +542,11 @@ ul {
 .info-circles__city {
   width: 3rem;
   height: 3rem;
-  border-radius: 3rem;
   border: 0.1rem solid #040304;
+  border-radius: 50%;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
-  margin: 0 0 0.9rem 0;
+  margin-bottom: 0.9rem;
   padding-top: 1.1rem;
   text-align: center;
 }
@@ -548,10 +554,10 @@ ul {
 .info-circles__place {
   width: 3rem;
   height: 3rem;
-  border-radius: 3rem;
   border: 0.1rem solid #040304;
+  border-radius: 50%;
   font-size: 7px;
-  margin: 0 0 0.9rem 0;
+  margin-bottom: 0.9rem;
   padding-top: 0.9rem;
   text-align: center;
 }
