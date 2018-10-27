@@ -1,4 +1,15 @@
+header.nav--mobile {
+  padding: 0.3rem;
+}
+
+.burgermenu {
+  position: relative;
+  width: 1.5rem;
+  text-align: right;
+  float: right;
+}
+
 .logo--mobile {
-  width: 33px;
+  width: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
