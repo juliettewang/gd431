@@ -1,12 +1,12 @@
 header.nav--mobile{
-    padding: 0.3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .burgermenu{
-    position: relative;
     width: 1.5rem;
-    text-align: right;
-    float: right;
 }
 
 .logo--mobile{
