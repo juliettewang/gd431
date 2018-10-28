@@ -69,6 +69,11 @@ a.menu__link:hover, a.menu__link:focus {
   width: 11rem;
 }
 
+.menu__link--button:hover, .menu__link--button:focus {
+  color: #4a6b0c;
+  border: 0.1rem solid #4a6b0c;
+}
+
 .burgermenu {
   width: 1.5rem;
   margin: 0.5rem;

@@ -40,6 +40,11 @@ a.menu__link{
     padding: 0.6rem;
     text-decoration: none;
     width: 11rem;
+
+    &:hover, &:focus{
+        color: darken($color-green,7);
+        border: 0.1rem solid darken($color-green,7);
+      }
 }
 
 // Header Elements
