@@ -1,16 +1,33 @@
-header.nav--mobile{
+// Header Base
+
+header.nav{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 0.7rem;
 }
+
+.nav__menu{
+    height: calc(100vh-4rem);
+}
+
+.nav__links{
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+// Header Elements
 
 .burgermenu{
     width: 1.5rem;
+    margin: 0.5rem;
 }
 
 .logo--mobile{
     width: 2.5rem;
 }
+
 
 
