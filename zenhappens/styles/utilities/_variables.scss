@@ -1,0 +1,12 @@
+// scss variables
+
+$color-black: #454545;
+$color-green: #608B10;
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-serif: 'Crimson Text', serif;
+
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
