@@ -17,6 +17,10 @@ a {
   color: #608B10;
 }
 
+a:hover, a:focus {
+  color: #608b10;
+}
+
 header.nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -42,11 +46,15 @@ header.nav {
   text-align: center;
 }
 
-.menu__link {
+a.menu__link {
   color: #454545;
   display: block;
   margin: 2.7rem auto 2.7rem auto;
   text-decoration: none;
+}
+
+a.menu__link:hover, a.menu__link:focus {
+  color: #608B10;
 }
 
 .menu__link--button {

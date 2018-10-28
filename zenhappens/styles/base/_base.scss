@@ -16,4 +16,8 @@ body{
 
 a{
   color: $color-green;
+  
+  &:hover, &:focus{
+    color: rgba($color-green, 10%);
+  }
 }

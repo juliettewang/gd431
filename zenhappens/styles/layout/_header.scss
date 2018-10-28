@@ -19,11 +19,15 @@ header.nav{
     text-align: center;
 }
 
-.menu__link{
+a.menu__link{
     color: $color-black;
     display: block;
     margin: 2.7rem auto 2.7rem auto;
     text-decoration: none;
+
+    &:hover, &:focus{
+        color: $color-green;
+      }
 }
 
 .menu__link--button{
