@@ -8,26 +8,34 @@ header.nav{
 }
 
 .nav__menu{
-    height: calc(100vh-4rem);
+    height: calc(100vh-2rem);
 }
 
 .nav__links{
     font-size: 1rem;
     list-style-type: none;
+    margin: 2rem;
     padding: 0;
     text-align: center;
 }
 
-a.menu__link{
+.menu__link{
+    color: $color-black;
     display: block;
-    font-size: 10rem;
-    padding: 2rem;
-    color: navy;
+    margin: 2.7rem auto 2.7rem auto;
     text-decoration: none;
+}
 
-    &--button{
-        color: $color-green;
-    }
+.menu__link--button{
+    border: 0.1rem solid $color-green;
+    color: $color-green;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 2.7rem auto 2.7rem auto;
+    padding: 0.6rem;
+    text-decoration: none;
+    width: 11rem;
 }
 
 // Header Elements
