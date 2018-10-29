@@ -1,0 +1,40 @@
+footer{
+    border-top: 0.03rem solid #B3B3B3;
+    text-align: center;
+}
+
+// Logo Footer
+
+.logo--wordmark{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.logo--tagline{
+    color: #838383;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.9rem;
+}
+
+// contact details
+
+.footer__contact{
+    font-style: normal;
+    margin: 1rem;
+}
+
+.footer__copyright{
+    background-color: #F1F1F1;
+    padding: $padding-mobile;;
+}
+
+.link__unimportant{
+    color: $color-black;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-decoration: underline;
+}

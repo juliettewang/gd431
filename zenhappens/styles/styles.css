@@ -457,6 +457,43 @@ a.menu__link:hover, a.menu__link:focus {
   width: 2.5rem;
 }
 
+footer {
+  border-top: 0.03rem solid #B3B3B3;
+  text-align: center;
+}
+
+.logo--wordmark {
+  color: #608B10;
+  font-family: "Crimson Text", serif;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.logo--tagline {
+  color: #838383;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.9rem;
+}
+
+.footer__contact {
+  font-style: normal;
+  margin: 1rem;
+}
+
+.footer__copyright {
+  background-color: #F1F1F1;
+  padding: 1rem;
+}
+
+.link__unimportant {
+  color: #454545;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
 .landing__hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
