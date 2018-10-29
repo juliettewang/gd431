@@ -38,14 +38,26 @@ a.menu__link{
 
 // Header Elements
 
+.logo--combined{
+    display: flex;
+    align-items: center;
+}
+
+.logo--icon{
+    width: 2.5rem;
+}
+
+
+.logo__wordmark{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+}
+
 .burgermenu{
     width: 1.5rem;
     margin: 0.5rem;
 }
-
-.logo--mobile{
-    width: 2.5rem;
-}
-
 
 
