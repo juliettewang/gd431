@@ -9,7 +9,7 @@ footer{
     color: $color-green;
     font-family: $font-serif;
     font-size: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .logo--tagline{
@@ -20,22 +20,24 @@ footer{
 }
 
 // social icons
+// is this the best way to make icons display inline / best way to display icons as img?
 
 .footer__social--icons{
     list-style-type: none;
+    padding: 0;
 }
 
-.social__icon--yelp{
-    background-image: url(/zenhappens/images/icon-yelp.svg);
-    background-size: 2rem;
-    width: 2rem;
+ul.footer__social--icons>li{
+    display: inline;
+    margin: 1rem;
 }
+
 
 // contact details
 
 .footer__contact{
     font-style: normal;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .footer__copyright{

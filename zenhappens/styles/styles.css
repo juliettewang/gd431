@@ -466,7 +466,7 @@ footer {
   color: #608B10;
   font-family: "Crimson Text", serif;
   font-size: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .logo--tagline {
@@ -478,17 +478,17 @@ footer {
 
 .footer__social--icons {
   list-style-type: none;
+  padding: 0;
 }
 
-.social__icon--yelp {
-  background-image: url(/zenhappens/images/icon-yelp.svg);
-  background-size: 2rem;
-  width: 2rem;
+ul.footer__social--icons > li {
+  display: inline;
+  margin: 1rem;
 }
 
 .footer__contact {
   font-style: normal;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .footer__copyright {
