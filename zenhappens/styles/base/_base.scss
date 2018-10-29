@@ -9,6 +9,7 @@ html{
 body{
     font-family: $font-sans-serif;
     color: $color-black;
+    margin: 0;
 }
 
 
@@ -17,10 +18,16 @@ body{
 h1{
   font-family: $font-serif;
   font-size: 4rem;
+  font-weight: 400;
 
   @media only screen and (max-width: 500px){
     font-size: 2rem;
   }
+}
+
+p{
+  font-size: 0.9rem;
+  line-height: 1.7rem;
 }
 
 a{
