@@ -19,6 +19,17 @@ footer{
     margin: 0.9rem;
 }
 
+// social icons
+
+.footer__social--icons{
+    list-style-type: none;
+}
+
+.social__icon--yelp{
+    background-image: url(/zenhappens/images/icon-yelp.svg);
+    width: 2rem;
+}
+
 // contact details
 
 .footer__contact{
@@ -38,3 +49,4 @@ footer{
     padding: 1rem;
     text-decoration: underline;
 }
+

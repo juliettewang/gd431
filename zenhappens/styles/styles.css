@@ -476,6 +476,15 @@ footer {
   margin: 0.9rem;
 }
 
+.footer__social--icons {
+  list-style-type: none;
+}
+
+.social__icon--yelp {
+  background-image: url(/zenhappens/images/icon-yelp.svg);
+  width: 2rem;
+}
+
 .footer__contact {
   font-style: normal;
   margin: 1rem;
