@@ -36,11 +36,19 @@
     background-size: 250%;
 	display: flex;
     flex-direction: column;
-    height: 35rem;
+    height: 27rem;
     justify-content: center;
     margin: $padding-mobile;
     padding: 2em;
     text-align: center;
     color: #fff;
     text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+}
+
+.eyebrow--onimage{
+    font-family: $font-condensed;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
 }

@@ -509,7 +509,7 @@ a.menu__link:hover, a.menu__link:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 35rem;
+  height: 27rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -518,6 +518,14 @@ a.menu__link:hover, a.menu__link:focus {
   text-align: center;
   color: #fff;
   text-shadow: 0 0.12rem 1.3rem rgba(0, 0, 0, 0.8);
+}
+
+.eyebrow--onimage {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
 }
 
 .landing__info {
