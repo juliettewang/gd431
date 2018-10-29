@@ -26,6 +26,13 @@ h1{
   }
 }
 
+h2{
+  color: $color-green;
+  font-family: $font-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 p{
   font-size: 0.9rem;
   font-weight: 400;
@@ -36,6 +43,8 @@ p{
 
 a{
   color: $color-green;
+  font-weight: 600;
+  text-decoration: none;
 
   &:hover, &:focus{
     color: rgba($color-green, 10%);

@@ -363,6 +363,13 @@ h1 {
   }
 }
 
+h2 {
+  color: #608B10;
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 p {
   font-size: 0.9rem;
   font-weight: 400;
@@ -373,6 +380,8 @@ p {
 
 a {
   color: #608B10;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
@@ -406,7 +415,7 @@ header.nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
 .nav__menu {
@@ -450,7 +459,7 @@ a.menu__link:hover, a.menu__link:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #608b10;
+  background-color: #454545;
   background-image: url("/zenhappens/images/zenhappens_landinghero-cropped.png");
   background-position: 90%;
   background-repeat: no-repeat;
@@ -481,5 +490,9 @@ a.menu__link:hover, a.menu__link:focus {
 .link__button--hero:hover, .link__button--hero:focus {
   color: rgba(255, 255, 255, 0.8);
   border: 0.1rem solid rgba(255, 255, 255, 0.8);
+}
+
+.landing__info {
+  padding: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
