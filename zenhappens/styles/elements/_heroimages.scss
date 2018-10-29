@@ -1,0 +1,11 @@
+.landing__hero{
+    align-items: center;
+    background-color: $color-green-light;
+    background-image: url("/zenhappens/images/zenhappens_landinghero.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+	display: flex;
+    flex-direction: column;
+    height: 30rem;
+	justify-content: center;
+}
