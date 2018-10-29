@@ -13,6 +13,17 @@ body {
   color: #454545;
 }
 
+h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 a {
   color: #608B10;
 }
@@ -88,9 +99,10 @@ a.menu__link:hover, a.menu__link:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #608b10;
-  background-image: url("/zenhappens/images/zenhappens_landinghero.png");
+  background-image: url("/zenhappens/images/zenhappens_landinghero-cropped.png");
+  background-position: 90%;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,5 +114,8 @@ a.menu__link:hover, a.menu__link:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2em;
+  text-align: center;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
