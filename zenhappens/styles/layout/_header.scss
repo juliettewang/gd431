@@ -31,21 +31,8 @@ a.menu__link{
       }
 }
 
-.menu__link--button{
-    border: 0.1rem solid $color-green;
-    color: $color-green;
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 600;
+.link__button--nav{
     margin: 2.7rem auto 2.7rem auto;
-    padding: 0.6rem;
-    text-decoration: none;
-    width: 11rem;
-
-    &:hover, &:focus{
-        color: darken($color-green,7);
-        border: 0.1rem solid darken($color-green,7);
-      }
 }
 
 // Header Elements

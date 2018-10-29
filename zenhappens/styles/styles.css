@@ -377,6 +377,23 @@ a:hover, a:focus {
   color: #608b10;
 }
 
+.link__button {
+  border: 0.1rem solid #608B10;
+  color: #608B10;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 1.3rem;
+  padding: 0.6rem;
+  text-decoration: none;
+  width: 11rem;
+}
+
+.link__button:hover, .link__button:focus {
+  color: #4a6b0c;
+  border: 0.1rem solid #4a6b0c;
+}
+
 header.nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -414,21 +431,8 @@ a.menu__link:hover, a.menu__link:focus {
   color: #608B10;
 }
 
-.menu__link--button {
-  border: 0.1rem solid #608B10;
-  color: #608B10;
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
+.link__button--nav {
   margin: 2.7rem auto 2.7rem auto;
-  padding: 0.6rem;
-  text-decoration: none;
-  width: 11rem;
-}
-
-.menu__link--button:hover, .menu__link--button:focus {
-  color: #4a6b0c;
-  border: 0.1rem solid #4a6b0c;
 }
 
 .burgermenu {
@@ -438,6 +442,23 @@ a.menu__link:hover, a.menu__link:focus {
 
 .logo--mobile {
   width: 2.5rem;
+}
+
+.link__button {
+  border: 0.1rem solid #608B10;
+  color: #608B10;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 1.3rem auto 1.3rem auto;
+  padding: 0.6rem;
+  text-decoration: none;
+  width: 11rem;
+}
+
+.link__button:hover, .link__button:focus {
+  color: #4a6b0c;
+  border: 0.1rem solid #4a6b0c;
 }
 
 .landing__hero {
@@ -466,20 +487,13 @@ a.menu__link:hover, a.menu__link:focus {
   color: #fff;
 }
 
-.hero__link--button {
+.link__button--hero {
   border: 0.1rem solid #ffffff;
   color: #ffffff;
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin: 2.7rem auto 2.7rem auto;
-  padding: 0.6rem;
-  text-decoration: none;
-  width: 11rem;
 }
 
-.hero__link--button:hover, .hero__link--button:focus {
-  color: #4a6b0c;
-  border: 0.1rem solid #4a6b0c;
+.link__button--hero:hover, .link__button--hero:focus {
+  color: rgba(255, 255, 255, 0.8);
+  border: 0.1rem solid rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=styles.css.map */
