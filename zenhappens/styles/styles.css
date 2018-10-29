@@ -365,7 +365,9 @@ h1 {
 
 p {
   font-size: 0.9rem;
-  line-height: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
   margin: 0;
 }
 
@@ -468,6 +470,7 @@ a.menu__link:hover, a.menu__link:focus {
   padding: 2em;
   text-align: center;
   color: #fff;
+  text-shadow: 0 0.12rem 1.3rem rgba(0, 0, 0, 0.8);
 }
 
 .link__button--hero {
