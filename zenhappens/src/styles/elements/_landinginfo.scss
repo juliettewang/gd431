@@ -1,0 +1,17 @@
+.landing__info{
+    padding: $padding-mobile;
+
+    @media only screen and (min-width: 500px){
+        display: flex;
+        justify-content: space-between;
+
+        > section{
+            flex-basis: 45%;
+            // flex: 1 0 30%;
+        }
+    }
+}
+
+.hours, .philosophy{
+    margin: 1.8rem auto 1.8rem auto;
+}

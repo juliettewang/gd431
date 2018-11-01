@@ -410,6 +410,7 @@ header.nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,6 +418,9 @@ header.nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav__menu {
@@ -525,7 +529,7 @@ ul.footer__social--icons > li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #454545;
-  background-image: url("/zenhappens/images/zenhappens_landinghero-cropped.png");
+  background-image: url("/images/zenhappens_landinghero-cropped.png");
   background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,7 +565,7 @@ ul.footer__social--icons > li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #454545;
-  background-image: url("/zenhappens/images/daveandrachel-full.png");
+  background-image: url("/images/daveandrachel-full.png");
   background-position: 25% bottom;
   background-repeat: no-repeat;
   background-size: 250%;
@@ -593,6 +597,21 @@ ul.footer__social--icons > li {
 
 .landing__info {
   padding: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .landing__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .landing__info > section {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
 }
 
 .hours, .philosophy {
