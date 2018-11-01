@@ -410,6 +410,7 @@ header.nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,6 +418,9 @@ header.nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav__menu {
