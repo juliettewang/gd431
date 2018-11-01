@@ -529,7 +529,7 @@ ul.footer__social--icons > li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #454545;
-  background-image: url("/zenhappens/images/zenhappens_landinghero-cropped.png");
+  background-image: url("/images/zenhappens_landinghero-cropped.png");
   background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -565,7 +565,7 @@ ul.footer__social--icons > li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #454545;
-  background-image: url("/zenhappens/images/daveandrachel-full.png");
+  background-image: url("/images/daveandrachel-full.png");
   background-position: 25% bottom;
   background-repeat: no-repeat;
   background-size: 250%;
