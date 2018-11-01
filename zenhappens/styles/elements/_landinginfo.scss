@@ -1,13 +1,15 @@
 .landing__info{
     padding: $padding-mobile;
 
-    // @media only screen and (max-width: 500px){
-    //     display: flex;
+    @media only screen and (min-width: 500px){
+        display: flex;
+        justify-content: space-between;
 
-    //     > section{
-    //         flex: 1 0 auto;
-    //     }
-    // }
+        > section{
+            flex-basis: 45%;
+            // flex: 1 0 30%;
+        }
+    }
 }
 
 .hours, .philosophy{

@@ -595,6 +595,21 @@ ul.footer__social--icons > li {
   padding: 1rem;
 }
 
+@media only screen and (min-width: 500px) {
+  .landing__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .landing__info > section {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
 .hours, .philosophy {
   margin: 1.8rem auto 1.8rem auto;
 }
