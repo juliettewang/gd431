@@ -1,16 +1,19 @@
-// Header Base
-
-
-
 // Header Elements
 
 .logo--combined{
+
+    @media screen and (max-width: $display-burger) {
     display: flex;
     align-items: center;
+    }
 }
 
 .logo--icon{
+    width: 5rem;
+
+    @media screen and (max-width: $display-burger) {
     width: 2.5rem;
+    }
 }
 
 
