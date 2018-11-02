@@ -1,44 +1,6 @@
 // Header Base
 
-header.nav{
-    align-items: center;
-    background-color: #ffffff;
-    // box-shadow: 0 2px 8px 0 rgba(0,0,0,0.23);
-    display: flex;
-    justify-content: space-between;
-    padding: $padding-mobile;
-    position: sticky;
-    top: 0;
-}
 
-.nav__menu{
-    height: calc(100vh - 80px);
-    padding: 1px;
-}
-
-.nav__links{
-    font-size: 1rem;
-    list-style-type: none;
-    margin: 2rem;
-    padding: 0;
-    text-align: center;
-}
-
-a.menu__link{
-    color: $color-black;
-    display: block;
-    font-weight: 400;
-    margin: 2.7rem auto 2.7rem auto;
-    text-decoration: none;
-
-    &:hover, &:focus{
-        color: $color-green;
-      }
-}
-
-.link__button--nav{
-    margin: 2.7rem auto 2.7rem auto;
-}
 
 // Header Elements
 

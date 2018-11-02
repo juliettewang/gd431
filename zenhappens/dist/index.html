@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Crimson+Text:400,600|Open+Sans:400,600,600i,700" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Did it work?</title>
+    <title>Zen Happens – Massage &amp; Wellness</title>
 </head>
 <body>
 
@@ -15,11 +15,18 @@
         <div class="logo--combined">
             <a href="/zenhappens/index.html"><img class="logo--icon" src="/images/zenhappens_logo.png" alt="Zen Happen's Logo."></a>
             <a class="logo__wordmark" href="/zenhappens/index.html">Zen Happens</a></div>  
-        <a href="/zenhappens/index.html"><img class="burgermenu" src="/images/burger-menu.svg" alt="Burger Menu."></a>
 </header>
 
     <nav class="nav__menu">
-        <ul class="nav__links">
+        <button id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset nav__menu__trigger">
+			<span aria-hidden="true" class="menu-icon">
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+			</span>
+		</button>
+
+        <ul id="js-site-nav" class="nav__links" aria-hidden="false" data-visible="false">
             <li><a class="menu__link" href="/zenhappens/index.html">About Us</a></li>
             <li><a class="menu__link" href="/zenhappens/index.html">Services</a></li>
             <li><a class="menu__link" href="/zenhappens/index.html">Contact Us</a></li>
@@ -74,5 +81,6 @@
         </div>
     </footer>
 
+<script src="js/menu.js"></script>
 </body>
 </html>
