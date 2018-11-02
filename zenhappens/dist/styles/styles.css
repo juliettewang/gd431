@@ -577,109 +577,6 @@ ul.footer__social--icons > li {
   display: none;
 }
 
-header.nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.nav__menu {
-  padding: 1px;
-}
-
-.nav__menu__trigger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
-  color: #ffffff;
-  font-size: 0.75rem;
-  opacity: 0.8;
-  padding: 0.5em;
-  text-align: center;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.nav__menu__trigger[aria-expanded=true] .menu-icon__line:nth-child(1) {
-  -webkit-transform: translateY(10px) rotate(45deg);
-          transform: translateY(10px) rotate(45deg);
-}
-
-.nav__menu__trigger[aria-expanded=true] .menu-icon__line:nth-child(2) {
-  display: none;
-}
-
-.nav__menu__trigger[aria-expanded=true] .menu-icon__line:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.nav__menu:hover {
-  opacity: 1;
-}
-
-.nav__menu__list[data-visible=true] {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: calc(100vh - 83px);
-  position: absolute;
-  top: 83px;
-  right: 0;
-  width: 100vw;
-}
-
-.nav__menu__list-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-.nav__links {
-  font-size: 1rem;
-  list-style-type: none;
-  margin: 2rem;
-  padding: 0;
-  text-align: center;
-}
-
-a.menu__link {
-  color: #454545;
-  display: block;
-  font-weight: 400;
-  margin: 2.7rem auto 2.7rem auto;
-  text-decoration: none;
-}
-
-a.menu__link:hover, a.menu__link:focus {
-  color: #608B10;
-}
-
-.link__button--nav {
-  margin: 2.7rem auto 2.7rem auto;
-}
-
 .u-button-reset {
   background: transparent;
   border: 0;
@@ -698,5 +595,89 @@ a.menu__link:hover, a.menu__link:focus {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 32px;
+}
+
+header.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav__menu--trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  padding: 0.5em;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav__menu--trigger[aria-expanded=true] .menu-icon__line:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+}
+
+.nav__menu--trigger[aria-expanded=true] .menu-icon__line:nth-child(2) {
+  display: none;
+}
+
+.nav__menu--trigger[aria-expanded=true] .menu-icon__line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.nav__menu:hover {
+  opacity: 1;
+}
+
+.nav__menu--list {
+  font-size: 1rem;
+  list-style-type: none;
+  margin: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+.nav__menu--list[data-visible=true] {
+  background-color: white;
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  top: 83px;
+  right: 0;
+  width: 100vw;
+}
+
+a.menu__link {
+  color: #454545;
+  display: block;
+  font-weight: 400;
+  margin: 2.7rem auto 2.7rem auto;
+  text-decoration: none;
+}
+
+a.menu__link:hover, a.menu__link:focus {
+  color: #608B10;
+}
+
+.link__button--nav {
+  margin: 2.7rem auto 2.7rem auto;
 }
 /*# sourceMappingURL=styles.css.map */
