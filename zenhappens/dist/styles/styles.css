@@ -615,18 +615,13 @@ header.nav {
 }
 
 .nav__menu--trigger {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
-  color: #ffffff;
-  font-size: 0.75rem;
-  opacity: 0.8;
-  padding: 0.5em;
+  padding: 1.5em;
   text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav__menu--trigger[aria-expanded=true] .menu-icon__line:nth-child(1) {
@@ -643,14 +638,15 @@ header.nav {
           transform: rotate(-45deg);
 }
 
-.nav__menu:hover {
-  opacity: 1;
+@media screen and (min-width: 500px) {
+  .nav__menu--trigger {
+    display: none;
+  }
 }
 
 .nav__menu--list {
   font-size: 1rem;
   list-style-type: none;
-  margin: 2rem;
   padding: 0;
   text-align: center;
 }
@@ -659,7 +655,8 @@ header.nav {
   background-color: white;
   bottom: 0;
   margin: 0;
-  position: absolute;
+  padding-top: 2em;
+  position: fixed;
   top: 83px;
   right: 0;
   width: 100vw;
