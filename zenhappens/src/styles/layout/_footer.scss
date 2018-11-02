@@ -3,6 +3,15 @@ footer{
     text-align: center;
 }
 
+.footer__container{
+    @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin: 0 5vw 0 5vw;;
+    }
+}
+
 // Logo Footer
 
 .logo--wordmark{
@@ -16,11 +25,11 @@ footer{
     color: #838383;
     font-size: 1rem;
     font-weight: 600;
-    margin: 0.9rem;
+    margin: 0.9rem 0 0.9rem 0;
 }
 
 // social icons
-// is this the best way to make icons display inline / best way to display icons as img?
+// @feedback is this the best way to make icons display inline / best way to display icons as img?
 
 .footer__social--icons{
     list-style-type: none;
@@ -29,7 +38,7 @@ footer{
 
 ul.footer__social--icons>li{
     display: inline;
-    margin: 1rem;
+    margin-right: 1rem;
 }
 
 
@@ -41,8 +50,14 @@ ul.footer__social--icons>li{
 }
 
 .footer__copyright{
+    align-items: center;
     background-color: #F1F1F1;
-    padding: $padding-mobile;;
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-mobile;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
 }
 
 .link__unimportant{
