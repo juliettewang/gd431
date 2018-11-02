@@ -4,11 +4,15 @@ footer{
 }
 
 .footer__container{
+    @media screen and (min-width: 500px) {
+        margin: 0 5vw 0 5vw;;
+    }
+
     @media screen and (min-width: 700px) {
         display: flex;
         justify-content: space-between;
         text-align: left;
-        margin: 0 5vw 0 5vw;;
+        margin: 0 7vw 0 7vw;;
     }
 }
 
@@ -55,6 +59,10 @@ ul.footer__social--icons>li{
     display: flex;
     justify-content: space-between;
     padding: $padding-mobile;
+
+    @media screen and (min-width: 500px) {
+        padding: $padding-mobile 7vw $padding-mobile 7vw;
+    }
     @media screen and (max-width: 700px) {
         flex-direction: column;
     }

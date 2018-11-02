@@ -54,6 +54,11 @@
         height: 34em;
         margin: 2em 5vw 2em 5vw;
     }
+
+    @media screen and (min-width: 1000px) {
+        height: 30em;
+        margin: 2em 7vw 2em 7vw;
+    }
 }
 
 .eyebrow--onimage{
