@@ -415,11 +415,16 @@ a:hover, a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 0 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
   text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1099px) {
   .logo--combined {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -439,7 +444,7 @@ a:hover, a:focus {
   width: 5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1099px) {
   .logo--icon {
     width: 2.5rem;
   }
@@ -451,7 +456,7 @@ a:hover, a:focus {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1099px) {
   .logo__wordmark {
     font-size: 1.4rem;
     padding: 0.8rem;
@@ -632,7 +637,7 @@ ul.footer__social--icons > li {
   width: 32px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1099px) {
   header.nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -675,7 +680,7 @@ ul.footer__social--icons > li {
           transform: rotate(-45deg);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1100px) {
   .nav__menu--trigger {
     display: none;
   }
@@ -688,7 +693,21 @@ ul.footer__social--icons > li {
   text-align: center;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (min-width: 1100px) {
+  .nav__menu--list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1099px) {
   .nav__menu--list[data-visible=true] {
     background-color: white;
     bottom: 0;
@@ -705,7 +724,7 @@ a.menu__link {
   color: #454545;
   display: block;
   font-weight: 400;
-  margin: 2.7rem auto 2.7rem auto;
+  margin: 0 2.7rem 0 2.7rem;
   text-decoration: none;
 }
 
@@ -713,7 +732,15 @@ a.menu__link:hover, a.menu__link:focus {
   color: #608B10;
 }
 
-.link__button--nav {
-  margin: 2.7rem auto 2.7rem auto;
+@media screen and (max-width: 1099px) {
+  a.menu__link {
+    margin: 2.7rem auto 2.7rem auto;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .link__button--nav {
+    margin: 2.7rem auto 2.7rem auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

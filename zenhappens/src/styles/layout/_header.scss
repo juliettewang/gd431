@@ -1,16 +1,18 @@
 // menu nav vars
 
-$display-burger: 500px;
+$display-burger: 1100px;
 
 // Header Elements
 
 .logo--combined{
     display: flex;
     flex-direction: column;
-    padding: 50px 0 30px 0;
+    justify-content: center;
+    padding-top: 50px;
     text-align: center;
+    transition: all 0.2s ease-in-out;
 
-    @media screen and (max-width: $display-burger) {
+    @media screen and (max-width: ($display-burger - 1px)){
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -21,7 +23,7 @@ $display-burger: 500px;
 .logo--icon{
     width: 5rem;
 
-    @media screen and (max-width: $display-burger) {
+    @media screen and (max-width: ($display-burger - 1px)){
     width: 2.5rem;
     }
 }
@@ -32,7 +34,7 @@ $display-burger: 500px;
     font-family: $font-serif;
     font-size: 2rem;
 
-    @media screen and (max-width: $display-burger) {
+    @media screen and (max-width: ($display-burger - 1px)){
     font-size: 1.4rem;
     padding: 0.8rem;
     }

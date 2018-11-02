@@ -31,7 +31,7 @@
 // base
 
 header.nav{
-    @media screen and (max-width: $display-burger) {
+    @media screen and (max-width: ($display-burger - 1px)) {
     align-items: center;
     background-color: #ffffff;
     // box-shadow: 0 2px 8px 0 rgba(0,0,0,0.23);
@@ -44,7 +44,7 @@ header.nav{
 }
 
 .nav__menu{
-    // padding: 1px; 
+
     
     &--trigger {
         // base
@@ -85,6 +85,12 @@ header.nav{
             padding: 0;
             text-align: center;
 
+            @media screen and (min-width: $display-burger) {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
             @media screen and (max-width: ($display-burger - 1px)) {
             &[data-visible=true] {
                 $header-height: 83px;
@@ -108,15 +114,22 @@ a.menu__link{
     color: $color-black;
     display: block;
     font-weight: 400;
-    margin: 2.7rem auto 2.7rem auto;
+    margin: 0 2.7rem 0 2.7rem;
     text-decoration: none;
 
     &:hover, &:focus{
         color: $color-green;
       }
+
+    @media screen and (max-width: ($display-burger - 1px)) {
+        margin: 2.7rem auto 2.7rem auto;
+    }
 }
 
 .link__button--nav{
+
+    @media screen and (max-width: ($display-burger - 1px)) {
     margin: 2.7rem auto 2.7rem auto;
+    }
 }
 

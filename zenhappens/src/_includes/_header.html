@@ -1,5 +1,24 @@
 <header class="nav">
         <div class="logo--combined">
-            <a href="/zenhappens/index.html"><img class="logo--icon" src="/images/zenhappens_logo.png" alt="Zen Happen's Logo."></a>
-            <a class="logo__wordmark" href="/zenhappens/index.html">Zen Happens</a></div>  
+        {# @feedback container prevents a becoming block element from flex - is this best way#}
+            <div class="logo__container"><a href="/zenhappens/index.html"><img class="logo--icon" src="/images/zenhappens_logo.png" alt="Zen Happen's Logo."></a></div>
+            <div class="logo__container"><a class="logo__wordmark" href="/zenhappens/index.html">Zen Happens</a></div>  
+        </div>
+    <nav class="nav__menu">
+        <button id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset nav__menu--trigger">
+			<span aria-hidden="true" class="menu-icon">
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+			</span>
+		</button>
+
+        <ul id="js-site-nav" class="nav__menu--list nav__links" aria-hidden="false" data-visible="false">
+            <li><a class="menu__link" href="/zenhappens/index.html">About Us</a></li>
+            <li><a class="menu__link" href="/zenhappens/index.html">Services</a></li>
+            <li><a class="menu__link" href="/zenhappens/index.html">Contact Us</a></li>
+            <li><a class="link__button link__button--nav" href="/zenhappens/index.html">Book Online</a></li>
+            <li><a class="link__button link__button--nav" href="/zenhappens/index.html">Gift Cards</a></li>
+        </ul>
+    </nav>
 </header>
