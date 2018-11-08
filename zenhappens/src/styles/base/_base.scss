@@ -1,6 +1,10 @@
 html{
     box-sizing: border-box;
   }
+
+*{
+  transition: all 0.3s ease-in-out;
+}  
   
 *, *:before, *:after {
     box-sizing: inherit;
