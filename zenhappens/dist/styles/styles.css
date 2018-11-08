@@ -855,4 +855,20 @@ a.menu__link:hover, a.menu__link:focus {
     margin: 2.7rem auto 2.7rem auto;
   }
 }
+
+.appointment__form {
+  margin: 4vw 7vw 4vw 7vw;
+}
+
+fieldset {
+  border: 0;
+}
+
+.appointment__form--question {
+  color: #608B10;
+  font-family: "Crimson Text", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0.8rem auto 0.8rem auto;
+}
 /*# sourceMappingURL=styles.css.map */
