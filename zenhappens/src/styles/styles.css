@@ -649,6 +649,31 @@ ul.footer__social--icons > li {
   text-transform: uppercase;
 }
 
+.appointment__hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #454545;
+  background-image: url("/images/appointment-massage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0.12rem 1.3rem rgba(0, 0, 0, 0.8);
+}
+
 .landing__info {
   padding: 1rem;
 }
