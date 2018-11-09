@@ -145,7 +145,7 @@ body:not(:-moz-handler-blocked) fieldset {
         outline: none;
     }
 
-    &::-ms-track { // A little somethin' somethin' for IE
+    &::-ms-track { // A little something for IE
         width: 100%;
         cursor: pointer;
         background: transparent;

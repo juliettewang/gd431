@@ -1,3 +1,6 @@
+// javascript by Trevan Hetzel on codepen
+// https://codepen.io/trevanhetzel/pen/rOVrGK
+
 var sheet = document.createElement('style'),  
   $rangeInput = $('.range input'),
   prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
