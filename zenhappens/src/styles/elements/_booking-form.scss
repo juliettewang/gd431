@@ -46,4 +46,16 @@ body:not(:-moz-handler-blocked) fieldset {
     padding: 1.1em;
     text-align: center;
     width: 14em;
+
+    &:hover{
+        background-color: $color-green;
+        color: #fff;
+        
+    }
+}
+
+.form__radio--input:checked + .form__radio--label {
+    background: #6D9E11;
+    border: 1px solid #6D9E11;
+    color: #fff;
 }

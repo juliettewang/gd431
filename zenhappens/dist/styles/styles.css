@@ -351,8 +351,8 @@ html {
 }
 
 * {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 *, *:before, *:after {
@@ -922,5 +922,16 @@ body:not(:-moz-handler-blocked) fieldset {
   padding: 1.1em;
   text-align: center;
   width: 14em;
+}
+
+.form__radio--label:hover {
+  background-color: #608B10;
+  color: #fff;
+}
+
+.form__radio--input:checked + .form__radio--label {
+  background: #6D9E11;
+  border: 1px solid #6D9E11;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
