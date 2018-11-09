@@ -20,7 +20,7 @@ body:not(:-moz-handler-blocked) fieldset {
     display: table-cell;
   }
 
-// form styles
+// radio form styles
 
 .appointment__form--question{
     color: $color-green;
@@ -59,3 +59,135 @@ body:not(:-moz-handler-blocked) fieldset {
     border: 1px solid #6D9E11;
     color: #fff;
 }
+
+.form__radio--input:focus + .form__radio--label {
+    background: #6D9E11;
+    border: 1px solid #6D9E11;
+    color: #fff;
+	font-weight: 600;
+}
+
+// range input styles
+
+.form__range-container{
+    
+}
+
+// mixins
+
+@mixin rangeThumb {
+    background: $color-green;
+    border: 0 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    margin: -8px 0 0 0;
+    width: 25px;
+  }
+
+@mixin rangeTrack {
+    background: #F1F1F1;
+    border-radius: 1em;
+    cursor: pointer;
+    height: 10px;
+    width: 100%;
+}
+
+// range style
+
+.range {
+    position: relative;
+    width: 550px;
+    height: 12px;
+}
+
+.range input {
+    width: 100%;
+    position: absolute;
+    top: 9.5px;
+    height: 0;
+    -webkit-appearance: none;
+  
+    // Thumb
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // needed again for Chrome & Safari
+      @include rangeThumb;
+    }
+  
+    &::-moz-range-thumb {
+      @include rangeThumb;
+    }
+  
+    &::-ms-thumb {
+      @include rangeThumb;
+    }
+    
+    // Track
+    &::-webkit-slider-runnable-track {
+        @include rangeTrack;
+    }
+
+    &::-moz-range-track {
+        @include rangeTrack;
+    }
+
+    &::-ms-track {
+        @include rangeTrack;
+    }
+
+    &:focus { // override outline/background on focus
+        background: none;
+        outline: none;
+    }
+
+    &::-ms-track { // A little somethin' somethin' for IE
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+}
+
+// label below slider style
+
+.range-labels {
+    margin: 18px -41px 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      position: relative;
+      float: left;
+      width: 90px;
+      text-align: center;
+      color: $color-black;
+      font-size: 0.8rem;
+      cursor: pointer;
+      
+      &::before {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        left: 0;
+        content: "";
+        margin: 0 auto;
+        width: 9px;
+        height: 9px;
+        background: $color-green-dark;
+        border-radius: 50%;
+      }
+    }
+    
+    .active {
+      color: $color-green;
+    }
+    
+    .selected::before {
+      background: $color-green;
+    }
+    
+    .active.selected::before {
+      display: none;
+    }
+  }

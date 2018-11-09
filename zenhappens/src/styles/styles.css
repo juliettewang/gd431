@@ -934,4 +934,134 @@ body:not(:-moz-handler-blocked) fieldset {
   border: 1px solid #6D9E11;
   color: #fff;
 }
+
+.form__radio--input:focus + .form__radio--label {
+  background: #6D9E11;
+  border: 1px solid #6D9E11;
+  color: #fff;
+  font-weight: 600;
+}
+
+.range {
+  position: relative;
+  width: 550px;
+  height: 12px;
+}
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 9.5px;
+  height: 0;
+  -webkit-appearance: none;
+}
+
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #608B10;
+  border: 0 !important;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  margin: -8px 0 0 0;
+  width: 25px;
+}
+
+.range input::-moz-range-thumb {
+  background: #608B10;
+  border: 0 !important;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  margin: -8px 0 0 0;
+  width: 25px;
+}
+
+.range input::-ms-thumb {
+  background: #608B10;
+  border: 0 !important;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  margin: -8px 0 0 0;
+  width: 25px;
+}
+
+.range input::-webkit-slider-runnable-track {
+  background: #F1F1F1;
+  border-radius: 1em;
+  cursor: pointer;
+  height: 10px;
+  width: 100%;
+}
+
+.range input::-moz-range-track {
+  background: #F1F1F1;
+  border-radius: 1em;
+  cursor: pointer;
+  height: 10px;
+  width: 100%;
+}
+
+.range input::-ms-track {
+  background: #F1F1F1;
+  border-radius: 1em;
+  cursor: pointer;
+  height: 10px;
+  width: 100%;
+}
+
+.range input:focus {
+  background: none;
+  outline: none;
+}
+
+.range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.range-labels li {
+  position: relative;
+  float: left;
+  width: 90px;
+  text-align: center;
+  color: #454545;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.range-labels li::before {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  width: 9px;
+  height: 9px;
+  background: #486B08;
+  border-radius: 50%;
+}
+
+.range-labels .active {
+  color: #608B10;
+}
+
+.range-labels .selected::before {
+  background: #608B10;
+}
+
+.range-labels .active.selected::before {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
