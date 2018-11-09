@@ -956,9 +956,10 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .range {
+  border-radius: 1em;
+  height: 10px;
   position: relative;
   width: 550px;
-  height: 12px;
 }
 
 .range input {
@@ -976,7 +977,7 @@ body:not(:-moz-handler-blocked) fieldset {
   border-radius: 50%;
   cursor: pointer;
   height: 25px;
-  margin: -8px 0 0 0;
+  margin: -9px 0 0 0;
   width: 25px;
 }
 
@@ -986,7 +987,7 @@ body:not(:-moz-handler-blocked) fieldset {
   border-radius: 50%;
   cursor: pointer;
   height: 25px;
-  margin: -8px 0 0 0;
+  margin: -9px 0 0 0;
   width: 25px;
 }
 
@@ -996,31 +997,34 @@ body:not(:-moz-handler-blocked) fieldset {
   border-radius: 50%;
   cursor: pointer;
   height: 25px;
-  margin: -8px 0 0 0;
+  margin: -9px 0 0 0;
   width: 25px;
 }
 
 .range input::-webkit-slider-runnable-track {
   background: #F1F1F1;
-  border-radius: 1em;
+  border-radius: 2em;
   cursor: pointer;
   height: 10px;
+  margin: -4px 0 0 0;
   width: 100%;
 }
 
 .range input::-moz-range-track {
   background: #F1F1F1;
-  border-radius: 1em;
+  border-radius: 2em;
   cursor: pointer;
   height: 10px;
+  margin: -4px 0 0 0;
   width: 100%;
 }
 
 .range input::-ms-track {
   background: #F1F1F1;
-  border-radius: 1em;
+  border-radius: 2em;
   cursor: pointer;
   height: 10px;
+  margin: -4px 0 0 0;
   width: 100%;
 }
 
@@ -1068,6 +1072,7 @@ body:not(:-moz-handler-blocked) fieldset {
 
 .range-labels .active {
   color: #608B10;
+  font-weight: 600;
 }
 
 .range-labels .selected::before {

@@ -86,24 +86,26 @@ body:not(:-moz-handler-blocked) fieldset {
     border-radius: 50%;
     cursor: pointer;
     height: 25px;
-    margin: -8px 0 0 0;
+    margin: -9px 0 0 0;
     width: 25px;
   }
 
 @mixin rangeTrack {
     background: #F1F1F1;
-    border-radius: 1em;
+    border-radius: 2em;
     cursor: pointer;
     height: 10px;
+    margin: -4px 0 0 0;
     width: 100%;
 }
 
 // range style
 
 .range {
+    border-radius: 1em;
+    height: 10px;
     position: relative;
     width: 550px;
-    height: 12px;
 }
 
 .range input {
@@ -186,6 +188,7 @@ body:not(:-moz-handler-blocked) fieldset {
     
     .active {
       color: $color-green;
+      font-weight: 600;
     }
     
     .selected::before {
