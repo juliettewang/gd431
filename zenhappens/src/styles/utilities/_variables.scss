@@ -1,3 +1,16 @@
+// utility classes
+
+.u-sr-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	margin: -1px;
+	padding: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+}
+
 // scss variables
 
 $color-black: #454545;

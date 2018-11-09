@@ -1,10 +1,15 @@
+// form base
+
 .appointment__form{
     margin: 5vw 7vw 5vw 7vw;
 }
 
 fieldset{
     border: 0;
+    margin: 7vh 0 7vh 0;
 }
+
+// form styles
 
 .appointment__form--question{
     color: $color-green;
@@ -12,4 +17,10 @@ fieldset{
     font-size: 1.6rem;
     font-weight: 400;
     margin: 1.2rem auto 1.2rem auto;
+    text-align: center;
+}
+
+.appointment__radio--label{
+    display: block;
+    margin: 2rem;
 }

@@ -334,6 +334,17 @@ template {
   display: none;
 }
 
+.u-sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -399,7 +410,7 @@ a:hover, a:focus {
   border: 0.1rem solid #608B10;
   color: #608B10;
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   margin: 1.3rem;
   padding: 0.6rem;
@@ -804,7 +815,7 @@ ul.footer__social--icons > li {
 }
 
 .nav__menu--list {
-  font-size: 1rem;
+  font-size: 0.9rem;
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -867,6 +878,7 @@ a.menu__link:hover, a.menu__link:focus {
 
 fieldset {
   border: 0;
+  margin: 7vh 0 7vh 0;
 }
 
 .appointment__form--question {
@@ -875,5 +887,11 @@ fieldset {
   font-size: 1.6rem;
   font-weight: 400;
   margin: 1.2rem auto 1.2rem auto;
+  text-align: center;
+}
+
+.appointment__radio--label {
+  display: block;
+  margin: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
