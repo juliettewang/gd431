@@ -72,9 +72,13 @@ title: Book an Appointment | Zen Happens
         <input class="form__radio--input u-sr-only" id="couples-massage" type="radio" name="massage type" value="couples massage">
         <label class="form__radio--label" for="couples-massage"><span>Couples Massage</span></label>
         </div>
+        </fieldset>
 
+        <fieldset>
         <legend class="appointment__form--question">For how long?</legend>
         
+        <div class="u-flex">
+        {# best way to center range input #}
         <div class="form__range-container">
         <div class="range">
         <input type="range" min="1" max="7" steps="1" value="1">
@@ -89,6 +93,8 @@ title: Book an Appointment | Zen Happens
         <li>90 min</li>
         <li>120 min</li>
         </ul>
+
+        </div>
         </div>
         </fieldset>
 

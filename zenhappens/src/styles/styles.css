@@ -942,6 +942,19 @@ body:not(:-moz-handler-blocked) fieldset {
   font-weight: 600;
 }
 
+.u-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__range-container {
+  margin: 1.5em;
+}
+
 .range {
   position: relative;
   width: 550px;

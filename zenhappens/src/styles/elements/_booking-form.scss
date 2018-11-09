@@ -69,8 +69,13 @@ body:not(:-moz-handler-blocked) fieldset {
 
 // range input styles
 
+.u-flex{
+    display: flex;
+    justify-content: center;
+}
+
 .form__range-container{
-    
+    margin: 1.5em ;
 }
 
 // mixins
