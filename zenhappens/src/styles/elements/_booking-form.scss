@@ -67,7 +67,8 @@ body:not(:-moz-handler-blocked) fieldset {
 	font-weight: 600;
 }
 
-// range input styles
+
+// range selector input styles
 
 .u-flex{
     display: flex;
@@ -224,12 +225,56 @@ body:not(:-moz-handler-blocked) fieldset {
 
 @import 'select-dropdown';
 
-//   submit button style
+// time select radio button style
 
-.form__submit--container{
+.appointment__form--question{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.2rem auto 1.2rem auto;
+    text-align: center;
+}
+
+.form__radio-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
+.form__radio--label{
+    border: 1px solid #454545;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 1em;
+    padding: 1.1em;
+    text-align: center;
+    width: 14em;
+
+    &:hover{
+        background-color: $color-green;
+        color: #fff;
+        
+    }
+}
+
+.form__radio--input:checked + .form__radio--label {
+    background: #6D9E11;
+    border: 1px solid #6D9E11;
+    color: #fff;
+}
+
+.form__radio--input:focus + .form__radio--label {
+    background: #6D9E11;
+    border: 1px solid #6D9E11;
+    color: #fff;
+	font-weight: 600;
+}
+
+
+
+//   submit button style
 
 .form__submit-button{
     background: #6D9E11;

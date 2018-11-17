@@ -1,3 +1,6 @@
+// javascript by Hernán Sartorio on codepen
+// https://codepen.io/hernansartorio/pen/vOrBym
+
 function create_custom_dropdowns() {
     $('select').each(function(i, select) {
       if (!$(this).next().hasClass('dropdown')) {

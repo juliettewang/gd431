@@ -99,7 +99,9 @@ title: Book an Appointment | Zen Happens
         </div>
         </fieldset>
 
-        <div class="form__dropdown--container">
+        <fieldset>
+        <legend class="appointment__form--question">With which therapist?</legend>
+        <div class="form__dropdown--container u-flex">
         <select class="">
         <option value="None" data-display-text="Select Therapist">No Preference</option>
         <option value="Carrington">Carrington David</option>
@@ -109,8 +111,20 @@ title: Book an Appointment | Zen Happens
         <option value="Steinke">Steinke Mary</option>
         </select>
         </div>
+        </fieldset>
 
-        <div class="form__submit--container">
+        <fieldset>
+        <legend class="appointment__form--question">When would you like to come in?</legend>
+        <div class="form__radio-container">
+        
+        <input class="form__radio--input u-sr-only" id="asap" type="radio" name="massage type" value="asap" checked>
+        <label class="form__radio--label" for="asap">As Soon as Possible</label>
+        
+        <input class="form__radio--input u-sr-only" id="select-time" type="radio" name="massage type" value="select-time">
+        <label class="form__radio--label" for="select-time"><span>Select Time</span></label>
+        </fieldset>
+
+        <div class="form__submit--container u-flex">
         <input class="form__submit-button" type="submit" value="Book Appointment">
         </div>
     </form>

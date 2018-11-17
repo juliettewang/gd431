@@ -1,6 +1,6 @@
 // Variables
 $input_height: 42px;
-$border_radius: 6px;
+$border_radius: 4px;
 $gray_light: #eee;
 $gray_lighter: #f6f6f6;
 
@@ -17,12 +17,18 @@ select {
   display: none;
 }
 
+// container
+
+.form__dropdown--container{
+   margin: 1.2em;
+}
+
 // Styles
 .dropdown { 
   @include gradient(rgba(255,255,255,.25), rgba(255,255,255,0));
   background-color: $gray_lighter;
   border-radius: $border_radius;
-  border: solid 1px $gray_light; 
+  border: solid 1px $color-black; 
   box-shadow: 0 1px 0 rgba(0,0,0,0.0075);
   box-sizing: border-box;
   cursor: pointer;
@@ -40,7 +46,7 @@ select {
   transition: all 0.2s ease-in-out;
   user-select: none;
   white-space: nowrap;
-  width: auto;
+  width: 320px;
   &:focus {
     background-color: darken($gray_lighter, 2%);
   }
@@ -58,7 +64,7 @@ select {
     width: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #777;
+    border-top: 4px solid $color-green;
     transform: origin(50% 20%);
     transition: all 0.125s ease-in-out;
     content: '';
@@ -108,14 +114,20 @@ select {
     &:hover .option:not(:hover) {
       background-color: transparent !important;
     }
+
+    > ul{
+        margin: 0;
+        padding: 0;
+    }
   }
   .option {
     cursor: default;
     font-weight: 400;
     line-height: $input_height - 2;
+    list-style: none;
     outline: none;
-    padding-left: 18px;
-    padding-right: 29px;
+    padding-left: 32px;
+    padding-right: 170px;
     text-align: left;
     transition: all 0.2s;
     &:hover, &:focus { 
@@ -127,38 +139,5 @@ select {
     &.selected:focus { 
       background: $gray_lighter;
     }
-  }
-}
-
-
-// Page styles
-body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: #666; 
-  font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-  margin: 40px auto 0;
-  max-width: 120px;
-}
-
-.by {
-  bottom: 12px;
-  color: #aaa;
-  font-size: 12px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-
-a {
-  color: #aaa;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    color: #666;
   }
 }
