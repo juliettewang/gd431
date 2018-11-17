@@ -67,6 +67,10 @@
     font-weight: 700;
     letter-spacing: 0.12rem;
     text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+        font-size: 1rem;
+    }
+    
 }
 
 // book an appointment
@@ -75,7 +79,6 @@
     align-items: center;
     background-color: $color-black;
     background-image: url("/images/appointment-massage.png");
-    // background-position: 90%;
     background-repeat: no-repeat;
     background-size: cover;
 	display: flex;
@@ -86,5 +89,30 @@
     text-align: center;
     color: #fff;
     text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+
+    @media screen and (max-width: 500px) {
+        background-position: 40%;
+    }
 }
 
+// services
+
+.services__hero{
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("/images/service-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+
+    @media screen and (max-width: 500px) {
+        background-position: 40%;
+    }
+}
