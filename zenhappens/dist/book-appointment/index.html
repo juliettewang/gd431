@@ -147,11 +147,33 @@
         <legend class="appointment__form--question">When would you like to come in?</legend>
         <div class="form__radio-container">
         
-        <input class="form__radio--input u-sr-only" id="asap" type="radio" name="massage type" value="asap" checked>
-        <label class="form__radio--label" for="asap">As Soon as Possible</label>
+        <input class="form__radio--input-time u-sr-only" id="asap" type="radio" name="massage type" value="asap" checked>
+        <label class="form__radio--label-time" for="asap">As Soon as Possible</label>
         
-        <input class="form__radio--input u-sr-only" id="select-time" type="radio" name="massage type" value="select-time">
-        <label class="form__radio--label" for="select-time"><span>Select Time</span></label>
+        <input class="form__radio--input-time u-sr-only" id="select-time" type="radio" name="massage type" value="select-time">
+        <label class="form__radio--label-time" for="select-time"><span>Select Time</span></label>
+        </div>
+        <legend class="select-time__label">Date</legend>
+        <div class="form__dropdown--container select-time__margin u-flex">
+        <select class="" id="date-dropdown">
+        <option value="friday" data-display-text="Friday – 9th November">Friday – 30th November</option>
+        <option value="Carrington">Saturday – 1st Demember</option>
+        <option value="Geslois">Sunday – 2nd Demember</option>
+        <option value="LaPlaca">Monday – 3rd Demember</option>
+        <option value="Pavelik">Tuesday – 4th Demember</option>
+        <option value="Steinke">Wednesday – 5th Demember</option>
+        </select>
+        </div>
+        <legend class="select-time__label">Time</legend>
+        <div class="form__dropdown--container select-time__margin u-flex">
+        <select class="" id="date-dropdown">
+        <option value="Morning" data-display-text="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        </select>
+        </div>
+        
+
         </fieldset>
 
         <div class="form__submit--container u-flex">

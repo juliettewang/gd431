@@ -1285,52 +1285,41 @@ select {
   background: #f6f6f6;
 }
 
-.appointment__form--question {
-  color: #608B10;
-  font-family: "Crimson Text", serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin: 1.2rem auto 1.2rem auto;
+.select-time__margin {
+  margin: 0.5em;
+}
+
+.select-time__label {
+  color: #454545;
+  font-size: 0.9rem;
+  margin-top: 1.2em;
   text-align: center;
 }
 
-.form__radio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form__radio--label {
-  border: 1px solid #454545;
+.form__radio--label-time {
+  border: 1px solid #7A7A7A;
   border-radius: 4px;
   cursor: pointer;
   display: block;
   margin: 1em;
-  padding: 1.1em;
+  padding: 1em;
   text-align: center;
-  width: 14em;
+  width: 20em;
 }
 
-.form__radio--label:hover {
-  background-color: #608B10;
-  color: #fff;
-}
-
-.form__radio--input:checked + .form__radio--label {
-  background: #6D9E11;
+.form__radio--label-time:hover {
+  background: rgba(109, 158, 17, 0.38);
   border: 1px solid #6D9E11;
-  color: #fff;
 }
 
-.form__radio--input:focus + .form__radio--label {
-  background: #6D9E11;
+.form__radio--input-time:checked + .form__radio--label-time {
+  background: rgba(109, 158, 17, 0.38);
   border: 1px solid #6D9E11;
-  color: #fff;
+}
+
+.form__radio--input-time:focus + .form__radio--label-time {
+  background: rgba(109, 158, 17, 0.38);
+  border: 1px solid #6D9E11;
   font-weight: 600;
 }
 

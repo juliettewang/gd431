@@ -227,48 +227,42 @@ body:not(:-moz-handler-blocked) fieldset {
 
 // time select radio button style
 
-.appointment__form--question{
-    color: $color-green;
-    font-family: $font-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin: 1.2rem auto 1.2rem auto;
+.select-time__margin{
+    margin: 0.5em;
+}
+
+.select-time__label{
+    color: #454545;
+    font-size: 0.9rem;
+    margin-top: 1.2em;
     text-align: center;
 }
 
-.form__radio-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.form__radio--label{
-    border: 1px solid #454545;
+.form__radio--label-time{
+    border: 1px solid $color-grey;
     border-radius: 4px;
     cursor: pointer;
     display: block;
     margin: 1em;
-    padding: 1.1em;
+    padding: 1em;
     text-align: center;
-    width: 14em;
+    width: 20em;
 
     &:hover{
-        background-color: $color-green;
-        color: #fff;
+        background: rgba(109,158,17,0.38);
+    border: 1px solid #6D9E11;
         
     }
 }
 
-.form__radio--input:checked + .form__radio--label {
-    background: #6D9E11;
+.form__radio--input-time:checked + .form__radio--label-time {
+    background: rgba(109,158,17,0.38);
     border: 1px solid #6D9E11;
-    color: #fff;
 }
 
-.form__radio--input:focus + .form__radio--label {
-    background: #6D9E11;
+.form__radio--input-time:focus + .form__radio--label-time {
+    background: rgba(109,158,17,0.38);
     border: 1px solid #6D9E11;
-    color: #fff;
 	font-weight: 600;
 }
 
