@@ -85,14 +85,20 @@ body:not(:-moz-handler-blocked) fieldset {
     border: 0 !important;
     border-radius: 50%;
     cursor: pointer;
-    height: 25px;
+    height: 1.563em;
     margin: -9px 0 0 0;
-    width: 25px;
+    width: 1.563em;
+
+    @media screen and (max-width: 620px) {
+        height: 1em;
+        margin-top: -4px;
+        width: 1em; 
+    }
   }
 
 @mixin rangeTrack {
     background: #F1F1F1;
-    border-radius: 2em;
+    border-radius: 2.5em;
     cursor: pointer;
     height: 10px;
     margin: -4px 0 0 0;
@@ -105,7 +111,11 @@ body:not(:-moz-handler-blocked) fieldset {
     border-radius: 1em;
     height: 10px;
     position: relative;
-    width: 550px;
+    width: 34.375em;
+    @media screen and (max-width: 620px) {
+        width: 19.5em; 
+    }
+
 }
 
 .range input {
@@ -162,6 +172,10 @@ body:not(:-moz-handler-blocked) fieldset {
     margin: 18px -41px 0;
     padding: 0;
     list-style: none;
+
+    @media screen and (max-width: 620px) {
+        margin: 18px -18px 0;
+    }
     
     li {
       position: relative;
@@ -171,6 +185,11 @@ body:not(:-moz-handler-blocked) fieldset {
       color: $color-black;
       font-size: 0.8rem;
       cursor: pointer;
+
+      @media screen and (max-width: 620px) {
+        width: 49.5px;
+      }
+      
       
       &::before {
         position: absolute;
@@ -183,6 +202,7 @@ body:not(:-moz-handler-blocked) fieldset {
         height: 9px;
         background: $color-green-dark;
         border-radius: 50%;
+        
       }
     }
     
@@ -199,3 +219,10 @@ body:not(:-moz-handler-blocked) fieldset {
       display: none;
     }
   }
+
+
+//   submit button style
+
+.form__submit-button{
+
+}
