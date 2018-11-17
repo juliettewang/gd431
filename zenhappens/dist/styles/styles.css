@@ -1124,4 +1124,208 @@ body:not(:-moz-handler-blocked) fieldset {
 .range-labels .active.selected::before {
   display: none;
 }
+
+select {
+  display: none;
+}
+
+.dropdown {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  border: solid 1px #eee;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.0075);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.0075);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+
+.dropdown:focus {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown:active, .dropdown.open {
+  background-color: #f0f0f0 !important;
+  border-color: #e4e4e4;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+}
+
+.dropdown:after {
+  height: 0;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #777;
+  -webkit-transform: origin(50% 20%);
+          transform: origin(50% 20%);
+  -webkit-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out;
+  content: '';
+  display: block;
+  margin-top: -2px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.dropdown.open:after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.dropdown.open .list {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown.open .option {
+  cursor: pointer;
+}
+
+.dropdown.wide {
+  width: 100%;
+}
+
+.dropdown.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.dropdown .list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+  transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 4px;
+  padding: 3px 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
+.dropdown .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+
+.dropdown .option {
+  cursor: default;
+  font-weight: 400;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.dropdown .option:hover, .dropdown .option:focus {
+  background-color: #f6f6f6 !important;
+}
+
+.dropdown .option.selected {
+  font-weight: 600;
+}
+
+.dropdown .option.selected:focus {
+  background: #f6f6f6;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 40px auto 0;
+  max-width: 120px;
+}
+
+.by {
+  bottom: 12px;
+  color: #aaa;
+  font-size: 12px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #666;
+}
+
+.form__submit--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__submit-button {
+  background: #6D9E11;
+  border: 1px solid #6D9E11;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 32px;
+  margin: auto;
+  padding: 0.4em 3em;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -220,9 +220,26 @@ body:not(:-moz-handler-blocked) fieldset {
     }
   }
 
+//   select dropdown
+
+@import 'select-dropdown';
 
 //   submit button style
 
-.form__submit-button{
+.form__submit--container{
+    display: flex;
+    justify-content: center;
+}
 
+.form__submit-button{
+    background: #6D9E11;
+    border: 1px solid #6D9E11; 
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 32px;
+    margin: auto;
+    padding: 0.4em 3em;
+    text-align: center;
 }
