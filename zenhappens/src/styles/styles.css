@@ -1387,11 +1387,12 @@ select {
   margin: 4em;
 }
 
-table {
-  margin-top: 0.2em;
+.table-style {
+  margin-top: 1em;
   font-family: "Crimson Text", serif;
   font-size: 1.3rem;
   line-height: 2rem;
+  width: 20em;
 }
 
 th {
@@ -1411,12 +1412,18 @@ th {
   font-size: 0.9rem;
 }
 
-.price-lists {
+.price-list--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.price-list__container {
+  width: 45%;
 }
 /*# sourceMappingURL=styles.css.map */

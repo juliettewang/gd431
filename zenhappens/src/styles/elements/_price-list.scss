@@ -2,11 +2,12 @@
     margin: 4em;
 }
 
-table{
-    margin-top: 0.2em;
+.table-style{
+    margin-top: 1em;
     font-family: $font-serif;
     font-size: 1.3rem;
     line-height: 2rem;
+    width: 20em;
 }
 
 th{
@@ -26,7 +27,12 @@ th{
     font-size: 0.9rem;
 }
 
-.price-lists{
+.price-list--flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.price-list__container{
+    width: 45%;
 }
