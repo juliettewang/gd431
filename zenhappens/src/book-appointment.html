@@ -13,12 +13,13 @@ title: Book an Appointment | Zen Happens
 
     <section class="appointment__form">
     <form action="" method="post">
-        <fieldset>
+
+        <fieldset id="js-services">
         <legend class="appointment__form--question">What Service are you looking for?</legend>
         
         <div class="form__radio-container">
 
-        <input class="form__radio--input u-sr-only" id="massage" type="radio" name="service"  value="massage" checked>
+        <input class="form__radio--input u-sr-only" id="massage" type="radio" name="service"  value="massage">
         <label class="form__radio--label" for="massage"><span>Massage</span></label>
 
         <input class="form__radio--input u-sr-only" id="reflexology" type="radio" name="service" value="reflexology">
@@ -42,7 +43,7 @@ title: Book an Appointment | Zen Happens
 
         </fieldset>
 
-        <fieldset>
+        <fieldset class="js-massage__questions" hidden>
         <legend class="appointment__form--question">What type of Massage?</legend>
         
         <div class="form__radio-container">
@@ -74,7 +75,7 @@ title: Book an Appointment | Zen Happens
         </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="js-massage__questions" hidden>
         <legend class="appointment__form--question">For how long?</legend>
         
         <div class="u-flex">
@@ -97,6 +98,7 @@ title: Book an Appointment | Zen Happens
 
         </div>
         </div>
+
         </fieldset>
 
         <fieldset>
