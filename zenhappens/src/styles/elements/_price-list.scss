@@ -1,9 +1,12 @@
-.custom-massage{
+.services__main{
     margin: 4em;
 }
 
 table{
-    margin-top: 1em;
+    margin-top: 0.2em;
+    font-family: $font-serif;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 th{
@@ -12,4 +15,18 @@ th{
 
 .table__price{
     text-align: right;
+}
+
+.table__add-detail{
+    padding-left: 1em;
+}
+
+.u-sansserif{
+    font-family: $font-sans-serif;
+    font-size: 0.9rem;
+}
+
+.price-lists{
+    display: flex;
+    justify-content: space-between;
 }

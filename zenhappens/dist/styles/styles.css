@@ -345,6 +345,10 @@ template {
   width: 1px;
 }
 
+.u-mt-2em {
+  margin-top: 2em;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1379,12 +1383,15 @@ select {
   text-align: center;
 }
 
-.custom-massage {
+.services__main {
   margin: 4em;
 }
 
 table {
-  margin-top: 1em;
+  margin-top: 0.2em;
+  font-family: "Crimson Text", serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 th {
@@ -1393,5 +1400,23 @@ th {
 
 .table__price {
   text-align: right;
+}
+
+.table__add-detail {
+  padding-left: 1em;
+}
+
+.u-sansserif {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.price-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */
