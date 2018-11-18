@@ -1378,4 +1378,20 @@ select {
   padding: 0.4em 3em;
   text-align: center;
 }
+
+.custom-massage {
+  margin: 4em;
+}
+
+table {
+  margin-top: 1em;
+}
+
+th {
+  text-align: left;
+}
+
+.table__price {
+  text-align: right;
+}
 /*# sourceMappingURL=styles.css.map */
