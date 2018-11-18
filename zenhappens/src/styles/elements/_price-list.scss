@@ -27,7 +27,11 @@
     font-family: $font-serif;
     font-size: 1.3rem;
     line-height: 2rem;
-    width: 20em;
+    width: 25em;
+
+    @media screen and (max-width: 1339px) {
+        width: 20em;
+     }
 
     @media screen and (max-width: 1065px) {
        width: 18em;
@@ -50,11 +54,6 @@ th{
     padding-left: 1em;
 }
 
-.u-sansserif{
-    font-family: $font-sans-serif;
-    font-size: 0.9rem;
-}
-
 .price-list--flex{
     display: flex;
     flex-wrap: wrap;
@@ -63,4 +62,25 @@ th{
 
 .price-list__container{
     width: 45%;
+}
+
+// type style
+
+.u-sansserif{
+    font-family: $font-sans-serif;
+    font-size: 0.9rem;
+}
+
+.service-type{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
+}
+
+.price-list__title{
+    margin-top: 1.4em;
+    margin-bottom: 0;
 }

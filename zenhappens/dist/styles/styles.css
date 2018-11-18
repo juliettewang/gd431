@@ -1420,7 +1420,13 @@ select {
   font-family: "Crimson Text", serif;
   font-size: 1.3rem;
   line-height: 2rem;
-  width: 20em;
+  width: 25em;
+}
+
+@media screen and (max-width: 1339px) {
+  .table-style {
+    width: 20em;
+  }
 }
 
 @media screen and (max-width: 1065px) {
@@ -1447,11 +1453,6 @@ th {
   padding-left: 1em;
 }
 
-.u-sansserif {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
-}
-
 .price-list--flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1465,5 +1466,24 @@ th {
 
 .price-list__container {
   width: 45%;
+}
+
+.u-sansserif {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.service-type {
+  color: #608B10;
+  font-family: "Crimson Text", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1.4rem;
+  padding-top: 1.4rem;
+}
+
+.price-list__title {
+  margin-top: 1.4em;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
