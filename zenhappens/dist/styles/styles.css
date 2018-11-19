@@ -1486,4 +1486,37 @@ th {
   margin-top: 1.4em;
   margin-bottom: 0;
 }
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read More';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read Less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline;
+  color: #608B10;
+  font-weight: 600;
+}
 /*# sourceMappingURL=styles.css.map */
