@@ -44,7 +44,7 @@
     <section class="appointment__form">
     <form action="" method="post">
 
-        <fieldset id="js-services">
+        <fieldset data-action="js-form__trigger" data-trigger="massage" data-target="js-massage__questions">
         <legend class="appointment__form--question">What Service are you looking for?</legend>
         
         <div class="form__radio-container">
@@ -145,7 +145,7 @@
         </div>
         </fieldset>
 
-        <fieldset id="js-time">
+        <fieldset data-action="js-form__trigger" data-trigger="select-time" data-target="js-schedule__custom">
         <legend class="appointment__form--question">When would you like to come in?</legend>
         <div class="form__radio-container">
         
@@ -157,8 +157,7 @@
         </div>
 
         </fieldset>
-        
-        <fieldset class="js-date__questions">
+        <fieldset class="js-schedule__custom" hidden>
         <legend class="select-time__label">Date</legend>
         <div class="form__dropdown--container select-time__margin u-flex">
         <select class="" id="date-dropdown">
@@ -171,8 +170,7 @@
         </select>
         </div>
         </fieldset>
-        
-        <fieldset class="js-date__questions" hidden>
+        <fieldset class="js-schedule__custom" hidden>
         <legend class="select-time__label">Time</legend>
         <div class="form__dropdown--container select-time__margin u-flex">
         <select class="" id="date-dropdown">
