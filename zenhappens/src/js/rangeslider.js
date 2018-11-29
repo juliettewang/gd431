@@ -3,7 +3,8 @@
 
 var sheet = document.createElement('style'),  
   $rangeInput = $('.range input'),
-  prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+  prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'],
+  times = ['15 minutes', '30 minutes', '45 minutes', '60 minutes', '75 minutes', '90 minutes', '120 minutes'];
 
 document.body.appendChild(sheet);
 
@@ -30,7 +31,10 @@ var getTrackStyle = function (el) {
 }
 
 $rangeInput.on('input', function () {
+  newValue = $(this).val();
   sheet.textContent = getTrackStyle(this);
+  $rangeInput.attr("aria-valuenow", newValue.toString());
+  $rangeInput.attr("aria-valuetext", times[newValue]);
 });
 
 // Change input value on label click

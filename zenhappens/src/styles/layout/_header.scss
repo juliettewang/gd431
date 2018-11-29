@@ -8,7 +8,7 @@ $display-burger: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     transition: all 0.2s ease-in-out;
 
@@ -21,7 +21,7 @@ $display-burger: 1100px;
 }
 
 .logo--icon{
-    width: 4rem;
+    width: 3.5rem;
 
     @media screen and (max-width: ($display-burger - 1px)){
     width: 2.5rem;
@@ -32,7 +32,7 @@ $display-burger: 1100px;
 .logo__wordmark{
     color: $color-green;
     font-family: $font-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
     @media screen and (max-width: ($display-burger - 1px)){
     font-size: 1.4rem;

@@ -18,7 +18,7 @@ footer{
 
 // Logo Footer
 
-.logo--wordmark{
+.logo__wordmark--footer{
     color: $color-green;
     font-family: $font-serif;
     font-size: 2rem;
@@ -33,14 +33,13 @@ footer{
 }
 
 // social icons
-// @feedback is this the best way to make icons display inline / best way to display icons as img?
 
-.footer__social--icons{
+.social-icons{
     list-style-type: none;
     padding: 0;
 }
 
-ul.footer__social--icons>li{
+ul.social-icons>li{
     display: inline;
     margin-right: 1rem;
 }
@@ -68,7 +67,7 @@ ul.footer__social--icons>li{
     }
 }
 
-.link__unimportant{
+.link__small{
     color: $color-black;
     font-size: 0.9rem;
     font-weight: 400;
