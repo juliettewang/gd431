@@ -4,18 +4,6 @@
     margin: 5vw 7vw 5vw 7vw;
 }
 
-legend {
-    display: block;
-    padding: 0;
-    display: table;
-  }
-
-fieldset {
-    border: 0;
-    padding: 0.01em 0 0 0;
-    margin: 7vh 0 7vh 0;
-    min-width: 0;
-  }
 body:not(:-moz-handler-blocked) fieldset {
     display: table-cell;
   }
@@ -38,7 +26,7 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .form__radio--label{
-    border: 1px solid #454545;
+    border: 1px solid $color-black;
     border-radius: 4px;
     cursor: pointer;
     display: block;
@@ -55,25 +43,20 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .form__radio--input:checked + .form__radio--label {
-    background: #6D9E11;
-    border: 1px solid #6D9E11;
+    background: $color-green-light;
+    border: 1px solid $color-green-light;
     color: #fff;
 }
 
 .form__radio--input:focus + .form__radio--label {
-    background: #6D9E11;
-    border: 1px solid #6D9E11;
+    background: $color-green-light;
+    border: 1px solid $color-green-light;
     color: #fff;
 	font-weight: 600;
 }
 
 
 // range selector input styles
-
-.u-flex{
-    display: flex;
-    justify-content: center;
-}
 
 .form__range-container{
     margin: 1.5em ;
