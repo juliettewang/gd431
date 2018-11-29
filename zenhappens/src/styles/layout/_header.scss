@@ -21,7 +21,7 @@ $display-burger: 1100px;
 }
 
 .logo--icon{
-    width: 5rem;
+    width: 4rem;
 
     @media screen and (max-width: ($display-burger - 1px)){
     width: 2.5rem;
@@ -32,7 +32,7 @@ $display-burger: 1100px;
 .logo__wordmark{
     color: $color-green;
     font-family: $font-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     @media screen and (max-width: ($display-burger - 1px)){
     font-size: 1.4rem;

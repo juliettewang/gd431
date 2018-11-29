@@ -18,6 +18,42 @@ body{
 }
 
 
+// utility classes
+
+.u-sr-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	margin: -1px;
+	padding: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+}
+
+.u-mt-2em{
+	margin-top: 2em;
+}
+
+
+// scss variables
+
+$color-black: #454545;
+$color-grey: #7A7A7A;
+$color-green: #608B10;
+$color-green-dark: #486B08;
+$color-green-light: rgba($color-green, 10%);
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-condensed: 'Open Sans Condensed', sans-serif;
+$font-serif: 'Crimson Text', serif;
+$padding-mobile: 1rem;
+
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+
 // type bases
 
 h1,h3{

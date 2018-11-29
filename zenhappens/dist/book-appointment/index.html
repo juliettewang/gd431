@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Crimson+Text:400,600|Open+Sans:400,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book an Appointment |  Zen Happens</title>
 </head>
 <body>
 
-
-    <header class="nav">
+<header class="nav">
         <div class="logo--combined">
         
             <div class="logo__container"><a href="/"><img class="logo--icon" src="/images/zenhappens_logo.png" alt="Zen Happen's Logo."></a></div>
             <div class="logo__container"><a class="logo__wordmark" href="/">Zen Happens</a></div>  
         </div>
     <nav class="nav__menu">
-        <button id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset nav__menu--trigger">
+        <button type="button" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset nav__menu--trigger">
 			<span aria-hidden="true" class="menu-icon">
 				 <div class="menu-icon__line"></div>
 				 <div class="menu-icon__line"></div>
@@ -162,11 +161,11 @@
         <div class="form__dropdown--container select-time__margin u-flex">
         <select class="" id="date-dropdown">
         <option value="friday" data-display-text="Friday – 9th November">Friday – 30th November</option>
-        <option value="Carrington">Saturday – 1st Demember</option>
-        <option value="Geslois">Sunday – 2nd Demember</option>
-        <option value="LaPlaca">Monday – 3rd Demember</option>
-        <option value="Pavelik">Tuesday – 4th Demember</option>
-        <option value="Steinke">Wednesday – 5th Demember</option>
+        <option value="saturday">Saturday – 1st Demember</option>
+        <option value="sunday">Sunday – 2nd Demember</option>
+        <option value="monday">Monday – 3rd Demember</option>
+        <option value="tuesday">Tuesday – 4th Demember</option>
+        <option value="wednesday">Wednesday – 5th Demember</option>
         </select>
         </div>
         </fieldset>
@@ -188,7 +187,9 @@
         </div>
     </form>
     </section>
-        <footer>
+  
+
+    <footer>
         <div class="footer__container">
         <div class="footer__logo">
             <p class="logo--wordmark">Zen Happens</p>
@@ -213,6 +214,7 @@
             <a class="link__unimportant" href="/zenhappens/index.html">Policies & Procedures</a>
         </div>
     </footer>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

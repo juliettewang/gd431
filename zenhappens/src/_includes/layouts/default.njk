@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Crimson+Text:400,600|Open+Sans:400,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% if title != "Home" %}{{ title }} | {% endif %} Zen Happens</title>
 </head>
 <body>
+
+{% include "_header.html" %}
+
 {{ content | safe }}
+
+{% include "_footer.html" %}
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
