@@ -1416,10 +1416,10 @@ select {
 }
 
 .table-style {
-  margin-top: 1em;
   font-family: "Crimson Text", serif;
   font-size: 1.3rem;
   line-height: 2rem;
+  margin-top: 1em;
   width: 25em;
 }
 
@@ -1437,6 +1437,33 @@ select {
 
 @media screen and (max-width: 800px) {
   .table-style {
+    width: 100%;
+  }
+}
+
+.service-description {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-right: 8em;
+  margin-top: 1em;
+  width: 35em;
+}
+
+@media screen and (max-width: 1339px) {
+  .service-description {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .service-description {
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service-description {
+    margin-right: 0;
     width: 100%;
   }
 }
