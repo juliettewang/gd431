@@ -132,15 +132,18 @@
 
         <fieldset>
         <legend class="appointment__form--question">With which therapist?</legend>
-        <div class="form__dropdown--container u-flex">
-        <select class="">
-        <option value="None" data-display-text="Select Therapist">No Preference</option>
-        <option value="Carrington">Carrington David</option>
-        <option value="Geslois">Geslois Leah</option>
-        <option value="LaPlaca">LaPlaca Rachel</option>
-        <option value="Pavelik">Pavelik Caitlin</option>
-        <option value="Steinke">Steinke Mary</option>
+        <label for="select-option" class="screen-reader-text">Select a Date</label>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+            <option value="None">No Preference</option>
+            <option value="Carrington">Carrington David</option>
+            <option value="Geslois">Geslois Leah</option>
+            <option value="LaPlaca">LaPlaca Rachel</option>
+            <option value="Pavelik">Pavelik Caitlin</option>
+            <option value="Steinke">Steinke Mary</option>
         </select>
+        </div>
         </div>
         </fieldset>
 
@@ -159,25 +162,30 @@
         <fieldset class="js-schedule__custom" hidden>
         <legend class="select-time__label">Date</legend>
         <label for="select-option" class="screen-reader-text">Select a Date</label>
-        <div class="styled-select u-flex">
-        <select name="selected-option" id="select-option">
-            <option value="friday" data-display-text="Friday – 9th November">Friday – 30th November</option>
-            <option value="saturday">Saturday – 1st Demember</option>
-            <option value="sunday">Sunday – 2nd Demember</option>
-            <option value="monday">Monday – 3rd Demember</option>
-            <option value="tuesday">Tuesday – 4th Demember</option>
-            <option value="wednesday">Wednesday – 5th Demember</option>
-        </select>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+                <option value="friday">Friday – 30th November</option>
+                <option value="saturday">Saturday – 1st Demember</option>
+                <option value="sunday">Sunday – 2nd Demember</option>
+                <option value="monday">Monday – 3rd Demember</option>
+                <option value="tuesday">Tuesday – 4th Demember</option>
+                <option value="wednesday">Wednesday – 5th Demember</option>
+            </select>
+            </div>
         </div>
         </fieldset>
         <fieldset class="js-schedule__custom" hidden>
         <legend class="select-time__label">Time</legend>
-        <div class="form__dropdown--container select-time__margin u-flex">
-        <select class="" id="date-dropdown">
-        <option value="Morning" data-display-text="Morning">Morning</option>
-        <option value="Afternoon">Afternoon</option>
-        <option value="Evening">Evening</option>
-        </select>
+        <label for="select-option" class="screen-reader-text">Select a Date</label>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </div>
         </div>
         
 
@@ -223,6 +231,5 @@
 <script src="/js/hidden-form.js"></script>
 <script src="/js/menu.js"></script>
 <script src="/js/rangeslider.js"></script>
-<script src="/js/select-dropdown.js"></script>
 </body>
 </html>
