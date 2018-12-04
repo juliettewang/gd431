@@ -1191,10 +1191,8 @@ body:not(:-moz-handler-blocked) fieldset {
   border-radius: 4px;
   font-size: 1em;
   height: 50px;
-  /* Same as .styled-select */
   padding: 5px 16px;
   width: 320px;
-  /* Width = .styled-select width + width of native select arrows */
   -webkit-appearance: none;
   /* Stops gradient background in Safari */
 }
