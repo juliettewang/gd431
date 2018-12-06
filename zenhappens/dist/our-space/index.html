@@ -37,7 +37,119 @@
 </header>
 
 
+<!--
+**** REQUIREMENTS ****
+1. User can start/stop the slider at will.
+2. Controls work for keyboard, mouse and swiping.
+3. Changes announced via screenreader
+4. Nonvisible images are lazy loaded
+5. Order of markup does not change/swap
+-->
 
+<svg style="display:none;">
+	<symbol id="icon--prev" viewbox="0 0 5.33 10" width="100%" height="100%" aria-labelledby="title--prev" xmlns="http://www.w3.org/2000/svg">
+  <title id="title--prev">Previous</title>
+  <path d="M5.02 10a.3.3 0 0 1-.23-.09L.1 5.23a.31.31 0 0 1 0-.45L4.8.08a.32.32 0 1 1 .42.47L.76 5l4.46 4.46A.31.31 0 0 1 5 10z"/>
+	</symbol>
+	<symbol id="icon--next" viewbox="0 0 5.33 10" width="100%" height="100%" aria-labelledby="title--next" xmlns="http://www.w3.org/2000/svg">
+  <title id="title--next">Next</title>
+  <path d="M.3 10a.3.3 0 0 0 .23-.09l4.7-4.68a.31.31 0 0 0 0-.45L.52.08A.31.31 0 1 0 .1.55L4.56 5 .1 9.46a.31.31 0 0 0 .22.54z"/>
+	</symbol>
+	<symbol id="icon--pause" viewbox="0 0 4.63 10" width="100%" height="100%" aria-labelledby="title--pause" xmlns="http://www.w3.org/2000/svg">
+  <title id="title--pause">Pause</title>
+  <path d="M.48 0c.28 0 .5.22.5.48v9.03a.5.5 0 0 1-.5.49.5.5 0 0 1-.48-.5V.49A.5.5 0 0 1 .48 0zm3.67 0a.5.5 0 0 1 .48.48v9.03a.5.5 0 0 1-.48.49.5.5 0 0 1-.5-.5V.49a.5.5 0 0 1 .5-.48z"/>
+	</symbol>
+	<symbol id="icon--play" viewbox="0 0 8.8 10" width="100%" height="100%" aria-labelledby="title--play" xmlns="http://www.w3.org/2000/svg">
+  <title id="title--play">Play</title>
+  <path d="M8.6 4.77c.23.13.23.33 0 .46L.4 9.95c-.22.12-.4.02-.4-.23V.28C0 .03.18-.07.4.05l8.2 4.72z"/>
+</symbol>
+</svg>
+
+<section id="js-slideshow" aria-label="Hannah Höch photomontages." aria-live="off" class="u-mx-auto slideshow">
+	<!-- aria-label v aria-labelledby 	 -->
+	<div class="u-mx-auto slideshow__container">
+		<ul class="u-fit u-list-reset slideshow__list">
+			<li class="js-slideshow-slide slideshow__list-item">
+				<a href="https://i.pinimg.com/originals/fe/61/b8/fe61b828c9490313681cda5257bae997.jpg" class="u-block" tabindex="-1">
+					<figure>
+						<img data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/heads-of-state--original.jpg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/heads-of-state--tiny.jpeg" alt="Two male figures in bathing costumes stand behind a wall on a cryptically doodled background."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/heads-of-state--original.jpg" alt="Two male figures in bathing costumes stand behind a wall on a cryptically doodled background." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Heads of State</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<a href="http://www.lypophrenia.com/wp-content/uploads/2011/01/Hannah-H%C3%B6ch_Astronomy-and-Movement-Dada-250%C3%97190-mm-drawing-and-collage-1922.jpg" class="u-block" tabindex="-1">
+					<figure>
+						<img data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/astronomy--original.jpeg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/beautiful-girl--tiny.jpeg" alt="Stark photomontage with jagged edges and red, yellow, and blue shades."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/astronomy--original.jpeg" alt="Stark photomontage with jagged edges and red, yellow, and blue shades." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Astronomy and Movement Dada</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<a href="http://www.lypophrenia.com/wp-content/uploads/2011/01/Hannah-H%C3%B6ch_-Mother-watercolour-and-photograph-collage-on-grey-paper-41o%C3%9735o-mm-1925%E2%80%936.jpg" class="u-block" tabindex="-1">
+					<figure>
+						<img data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/mother--original.jpg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/beautiful-girl--tiny.jpeg" alt="Strange portrait-like montage. The subject is rotund and wears a torturous looking mask."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/mother--original.jpg" alt="Strange portrait-like montage. The subject is rotund and wears a torturous looking mask." class="u-fit">
+					</noscript>
+						<figcaption class="slideshow__caption">Mother</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<a href="https://i.pinimg.com/originals/53/d9/e2/53d9e2cf92b05d3f7ddd903e5c91538a.jpg" class="u-block" tabindex="-1">
+					<figure>
+						<img data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/untitled--original.jpg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/untitled--tiny.jpeg" alt="Reclining nude on a colourful bed, wearing a large, monster-like mask and spectacles."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/untitled--original.jpg" alt="Reclining nude on a colourful bed, wearing a large, monster-like mask and spectacles." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Untitled</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<a href="https://d32dm0rphc51dk.cloudfront.net/WGpoh18Y3iHXoI9g7rHSBw/large.jpg" class="u-block" tabindex="-1">
+					<figure>
+						<img data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/beautiful-girl--original.jpg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/beautiful-girl--tiny.jpeg" alt="Photomontoge of female figures and automobile parts, featuing several instances of the BMW logo."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/beautiful-girl--original.jpg" alt="Photomontoge of female figures and automobile parts, featuing several instances of the BMW logo." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">The Beautiful Girl</figcaption>
+					</figure>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<ul class="u-list-reset slideshow__controls" aria-label="Slideshow controls.">
+		<li>
+			<button id="slideshow__button--pause" class="js-slideshow-button u-button-reset slideshow__button" aria-label="pause" data-action="pause" type="button">
+      	<svg aria-hidden="true" class="icon--pause" focusable="false"><use xlink:href="#icon--pause"></use></svg>
+      	<svg aria-hidden="true" class="icon--play" focusable="false"><use xlink:href="#icon--play"></use></svg>
+			</button>
+		</li>
+		<li>
+			<button id="slideshow__button--previous" class="js-slideshow-button u-button-reset slideshow__button" aria-label="previous" data-action="previous" type="button">
+      	<svg aria-hidden="true" focusable="false"><use xlink:href="#icon--prev"></use></svg>
+			</button>
+		</li>
+		<li>
+			<button id="slideshow__button--next" class="js-slideshow-button u-button-reset slideshow__button" aria-label="next" data-action="next" type="button">
+				<svg aria-hidden="true" focusable="false"><use xlink:href="#icon--next"/></svg>
+			</button>
+		</li>
+	</ul>
+</section>
 
     <footer>
         <div class="footer__container">
@@ -72,5 +184,6 @@
 <script src="/js/hidden-form.js"></script>
 <script src="/js/menu.js"></script>
 <script src="/js/rangeslider.js"></script>
+<script src="/js/gallery.js"></script>
 </body>
 </html>
