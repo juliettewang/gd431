@@ -16,44 +16,6 @@ $padding-mobile: 1rem;
   height: $height;
 }
 
-// utility classes
-
-.u-button-reset {
-	background: transparent;
-	border: 0;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	padding: 0;
-	text-align: inherit;
-}
-
-.u-flex{
-  display: flex;
-  justify-content: center;
-}
-
-.u-mt-2em{
-	margin-top: 2em;
-}
-
-.u-sansserif{
-  font-family: $font-sans-serif;
-  font-size: 0.9rem;
-}
-
-.u-sr-only {
-	border: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-	margin: -1px;
-	padding: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-}
-
 
 // base
 
