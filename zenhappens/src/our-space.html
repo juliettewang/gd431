@@ -14,33 +14,36 @@ javascript: gallery.js
 -->
 
 <section class="ourspace__heading">
-    <h1 class="gallery__title">Our Space</h1>
+    <h1 id ="slideshow-label" class="gallery__title">Our Space</h1>
     <p class="gallery__eyebrow">Zen Happens in Lauraville</p>
 </section>
 
 <svg style="display:none;">
-	<symbol id="icon--prev" viewbox="0 0 5.33 10" width="100%" height="100%" aria-labelledby="title--prev" xmlns="http://www.w3.org/2000/svg">
-  <title id="title--prev">Previous</title>
-  <path d="M8.5 1.5l-7 8 7 8" stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd"/>
-	</symbol>
-	<symbol id="icon--next" viewbox="0 0 5.33 10" width="100%" height="100%" aria-labelledby="title--next" xmlns="http://www.w3.org/2000/svg">
-  <title id="title--next">Next</title>
+	<symbol id="icon--next" width="14" height="24" aria-labelledby="title--next" xmlns="http://www.w3.org/2000/svg">
+	<title id="title--next">Next</title>
   <path d="M1.5 17.5l7-8-7-8" stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd"/>
 	</symbol>
-	<symbol id="icon--pause" viewbox="0 0 4.63 10" width="100%" height="100%" aria-labelledby="title--pause" xmlns="http://www.w3.org/2000/svg">
+
+	<symbol id="icon--prev" width="14" height="24" aria-labelledby="title--prev" xmlns="http://www.w3.org/2000/svg">
+	<title id="title--prev">Previous</title>
+  <path d="M8.5 1.5l-7 8 7 8" stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd"/>
+	</symbol>
+
+	<symbol id="icon--pause" width="11" height="19" aria-labelledby="title--pause" xmlns="http://www.w3.org/2000/svg">
   <title id="title--pause">Pause</title>
-  <g stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd">
+	<g stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd">
     <path d="M1.5.063v18M9.5.063v18"/>
   </g>
-	</symbol>
-	<symbol id="icon--play" viewbox="0 0 8.8 10" width="100%" height="100%" aria-labelledby="title--play" xmlns="http://www.w3.org/2000/svg">
-  <title id="title--play">Play</title>
-  <path d="M8.6 4.77c.23.13.23.33 0 .46L.4 9.95c-.22.12-.4.02-.4-.23V.28C0 .03.18-.07.4.05l8.2 4.72z"/>
 </symbol>
+
+	<symbol id="icon--play"width="14" height="18" aria-labelledby="title--play" xmlns="http://www.w3.org/2000/svg">
+		<title id="title--play">Play</title>
+		<path d="M0 18l14-9L0 0z" fill="#454545" fill-rule="evenodd"/>
+	</symbol>
+
 </svg>
 
-<section id="js-slideshow" aria-label="Hannah Höch photomontages." aria-live="off" class="u-mx-auto slideshow">
-	<!-- aria-label v aria-labelledby 	 -->
+<section id="js-slideshow" aria-labelledby="slideshow-label" aria-live="off" class="u-mx-auto slideshow">
 	<div class="u-mx-auto slideshow__container">
 		<ul class="u-fit u-list-reset slideshow__list">
 			<li class="js-slideshow-slide slideshow__list-item">
@@ -85,14 +88,56 @@ javascript: gallery.js
 			</li>
 			<li class="js-slideshow-slide slideshow__list-item">
 				<figure>
-						<img data-src="/images/gallery/ourspace_05--original.png" src="/images/gallery/ourspace_05--tiny.png" alt="Brush, flowers, eyemask on robe and towels."
+						<img data-src="/images/gallery/ourspace_05--original.png" src="/images/gallery/ourspace_05--tiny.png" alt="Mandala Artwork by Robert Selsor hung in Our Space."
 						 class="js-lazy u-fit slideshow__image">
 						<noscript>
-              <img src="/images/gallery/ourspace_05--original.png" alt="Brush, flowers, eyemask on robe and towels." class="u-fit">
+              <img src="/images/gallery/ourspace_05--original.png" alt="Mandala Artwork by Robert Selsor hung in Our Space." class="u-fit">
             </noscript>
 						<figcaption class="slideshow__caption">Beautiful Artwork by Robert Selsor hung up in our space.</figcaption>
 					</figure>
 			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_06--original.png" src="/images/gallery/ourspace_06--tiny.png" alt="Our cozy lobby with Sofas and plant."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_06--original.png" alt="Our cozy lobby with Sofas and plant." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Chill in our cozy lobby while you wait for your appointment.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_07--original.png" src="/images/gallery/ourspace_07--tiny.png" alt="Our Massage Room with a bed and plant."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_07--original.png" alt="Our Massage Room with a bed and plant." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">One of our Cozy massage therapy room.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_08--original.png" src="/images/gallery/ourspace_08--tiny.png" alt="Our Cozy Zen Happens Lobby."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_08--original.png" alt="Our Cozy Zen Happens Lobby." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Chill in our cozy lobby while you wait for your appointment.</figcaption>
+					</figure>
+			</li>
+
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_09--original.png" src="/images/gallery/ourspace_09--tiny.png" alt="Plant next to bowl of soap in atmospheric space."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_09--original.png" alt="Plant next to bowl of soap in atmospheric space." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Setting the mood as you get your massage therapy.</figcaption>
+					</figure>
+			</li>
+
 		</ul>
 	</div>
 	<ul class="u-list-reset slideshow__controls" aria-label="Slideshow controls.">
