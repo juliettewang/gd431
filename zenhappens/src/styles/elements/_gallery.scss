@@ -48,7 +48,8 @@
 	padding-bottom: 1%;
 	position: relative;
     width: 75%;
-    margin-bottom: 10vh;
+	margin-bottom: 10vh;
+	margin-top: 7vh;
 }
 .slideshow__list {
 	display: flex;
@@ -67,14 +68,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 50vh;
+		height: 80vh;
 		margin: 0;
 		width: 100%;
 	}
 }
 .slideshow__image {
 	height: auto;
-	max-height: 80%;
+	max-height: 100%;
 	transition: filter 0.2s ease-in-out;
 	width: auto;
 	&[data-src] {
@@ -84,7 +85,7 @@
 	}
 }
 .slideshow__caption {
-	bottom: 3%;
+	bottom: 0%;
 	color: $color-black;
 	position: absolute;
 }
@@ -103,7 +104,7 @@
 		}
 	}
 	&:focus {
-        background-color: rgba($color-black, 0.3);
+        background-color: rgba($color-black, 0.1);
 		// background-color: rgba(black, 0.5);
 		// outline: 1px dashed rgba(white, 0.5);
 		svg {
@@ -129,7 +130,7 @@
 	&[data-action="play"],
 	&[data-action="pause"] {
 		right: 10%;
-		bottom: 3%;
+		bottom: 0%;
 		svg {
 			height: 20px;
 			width: 20px;
