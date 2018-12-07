@@ -1582,8 +1582,7 @@ th {
 }
 
 .slideshow__button:focus {
-  background-color: rgba(0, 0, 0, 0.5);
-  outline: 1px dashed rgba(255, 255, 255, 0.5);
+  background-color: rgba(69, 69, 69, 0.3);
 }
 
 .slideshow__button:focus svg {

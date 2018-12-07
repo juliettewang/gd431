@@ -103,8 +103,9 @@
 		}
 	}
 	&:focus {
-		background-color: rgba(black, 0.5);
-		outline: 1px dashed rgba(white, 0.5);
+        background-color: rgba($color-black, 0.3);
+		// background-color: rgba(black, 0.5);
+		// outline: 1px dashed rgba(white, 0.5);
 		svg {
 			fill: rgba($color-black, 0.6);
 		}
