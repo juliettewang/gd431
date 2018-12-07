@@ -45,11 +45,17 @@
 }
 .slideshow {
 	background-color: #fff;
+	margin-bottom: 10vh;
+	margin-top: 5vh;
 	padding-bottom: 1%;
 	position: relative;
     width: 75%;
-	margin-bottom: 10vh;
-	margin-top: 5vh;
+	@media screen and (max-width: 1080px) {
+		margin-bottom: 8vh;
+		margin-top: 2vh;
+		width: 90%;
+	}
+
 }
 .slideshow__list {
 	display: flex;
@@ -71,6 +77,11 @@
 		height: 70vh;
 		margin: 0;
 		width: 100%;
+
+		@media screen and (max-width: 700px) {
+			height: 35vh;
+		}
+
 	}
 }
 .slideshow__image {
@@ -85,9 +96,11 @@
 	}
 }
 .slideshow__caption {
-	bottom: 0%;
+	bottom: -5%;
 	color: $color-black;
 	position: absolute;
+	text-align: center;
+	width: 85%;
 }
 .slideshow__button {
 	position: absolute;
@@ -120,6 +133,10 @@
 		padding-right: 1%;
 		top: 0;
 		width: 8%;
+		@media screen and (max-width: 700px) {
+			height: 90%;
+		}
+		// for next and pause button not to overlap
 	}
 	&[data-action="previous"] {
 		left: 0;
@@ -130,11 +147,17 @@
 	&[data-action="play"],
 	&[data-action="pause"] {
 		right: 10%;
-		bottom: 0%;
+		bottom: -5%;
 		svg {
 			height: 20px;
 			width: 20px;
 		}
+
+		@media screen and (max-width: 700px) {
+			right: 0%;
+		}
+		
+
 	}
 	&[data-action="play"] {
 		.icon--pause {
