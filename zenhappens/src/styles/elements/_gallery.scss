@@ -5,6 +5,38 @@
 
 // if JS is turned off, don't display the images waiting to lazy load
 // user will see images within noscript instead
+
+// base
+
+.ourspace__heading{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery__title{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.gallery__eyebrow{
+    font-family: $font-condensed;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+        font-size: 0.8rem;
+    }
+    
+}
+
+// gallery
+
 .js-off {
 	.js-lazy,
 	.slideshow__controls {
@@ -15,7 +47,8 @@
 	background-color: #fff;
 	padding-bottom: 1%;
 	position: relative;
-	width: 75%;
+    width: 75%;
+    margin-bottom: 10vh;
 }
 .slideshow__list {
 	display: flex;
