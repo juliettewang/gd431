@@ -1,5 +1,3 @@
-
-
 var navButton = document.getElementById("js-nav-trigger");
 
 navButton.addEventListener("click", function(){
