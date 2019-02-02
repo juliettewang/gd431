@@ -1,0 +1,167 @@
+---
+layout: layouts/default.njk
+title: Book an Appointment
+javascript: bookingform.min.js 
+---
+    <section class="appointment__hero">
+        <p class="eyebrow--onimage">Zen Happens in Lauraville</p>
+        <h1 class="landing__text">Book an Appointment</h1>
+    </section>
+
+    <section class="appointment__form">
+    <form action="" method="post">
+
+        <fieldset data-action="js-form__trigger" data-trigger="massage" data-target="js-massage__questions">
+        <legend class="appointment__form--question">What Service are you looking for?</legend>
+        
+        <div class="form__radio-container">
+
+        <input class="form__radio--input u-sr-only" id="massage" type="radio" name="service"  value="massage">
+        <label class="form__radio--label" for="massage"><span>Massage</span></label>
+
+        <input class="form__radio--input u-sr-only" id="reflexology" type="radio" name="service" value="reflexology">
+        <label class="form__radio--label" for="reflexology"><span>Reflexology</span></label>
+
+        <input class="form__radio--input u-sr-only" id="organic-facials" type="radio" name="service" value="organic facials">
+        <label class="form__radio--label" for="organic-facials"><span>Organic Facials</span></label>
+
+        <input class="form__radio--input u-sr-only" id="waxing" type="radio" name="service" value="waxing">
+        <label class="form__radio--label" for="waxing"><span>Waxing</span></label>
+
+        <input class="form__radio--input u-sr-only" id="reiki" type="radio" name="service" value="reiki">
+        <label class="form__radio--label" for="reiki"><span>Reiki</span></label>
+
+        <input class="form__radio--input u-sr-only" id="cupping" type="radio" name="service" value="cupping">
+        <label class="form__radio--label" for="cupping"><span>Cupping</span></label>
+
+        <input class="form__radio--input u-sr-only" id="home-massage" type="radio" name="service" class="u-sr-only" value="home massage">
+        <label class="form__radio--label" for="home-massage"><span>Home Massage</span></label>
+        </div>
+
+        </fieldset>
+
+        <fieldset class="js-massage__questions" hidden>
+        <legend class="appointment__form--question">What type of Massage?</legend>
+        
+        <div class="form__radio-container">
+        
+        <input class="form__radio--input u-sr-only" id="basic" type="radio" name="massage type" value="basic" checked>
+        <label class="form__radio--label" for="basic">Basic</label>
+
+        
+        <input class="form__radio--input u-sr-only" id="custom" type="radio" name="massage type" value="custom">
+        <label class="form__radio--label" for="custom">
+        <span>Custom</span>
+        </label>
+
+        <input class="form__radio--input u-sr-only" id="thai-massage" type="radio" name="massage type" value="thai massage">
+        <label class="form__radio--label" for="thai-massage">
+        <span>Thai Massage</span>
+        </label>
+
+        <input class="form__radio--input u-sr-only" id="prenatal-massage" type="radio" name="massage type" value="prenatal massage">
+        <label class="form__radio--label" for="prenatal-massage">
+        <span>Prenatal Massage</span>
+        </label>
+
+        <input class="form__radio--input u-sr-only" id="foot-massage" type="radio" name="massage type" value="foot massage"> 
+        <label class="form__radio--label" for="foot-massage"><span>Foot Massage</span></label>
+
+        <input class="form__radio--input u-sr-only" id="couples-massage" type="radio" name="massage type" value="couples massage">
+        <label class="form__radio--label" for="couples-massage"><span>Couples Massage</span></label>
+        </div>
+        </fieldset>
+
+        <fieldset class="js-massage__questions" hidden>
+        <legend class="appointment__form--question">For how long?</legend>
+        
+        <div class="u-flex">
+        {# best way to center range input #}
+        <div class="form__range-container">
+        
+        <div class="range">
+         <input type="range" min="1" max="7" steps="1" value="1" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1" aria-valuetext="15 minutes">
+        </div>
+
+        <ul class="range-labels">
+        <li class="active selected">15 min</li>
+        <li>30 min</li>
+        <li>45 min</li>
+        <li>60 min</li>
+        <li>75 min</li>
+        <li>90 min</li>
+        <li>120 min</li>
+        </ul>
+
+        </div>
+        </div>
+
+        </fieldset>
+
+        <fieldset>
+        <legend class="appointment__form--question">With which therapist?</legend>
+        <label for="select-option" class="screen-reader-text">Select a Date</label>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+            <option value="None">No Preference</option>
+            <option value="Carrington">Carrington David</option>
+            <option value="Geslois">Geslois Leah</option>
+            <option value="LaPlaca">LaPlaca Rachel</option>
+            <option value="Pavelik">Pavelik Caitlin</option>
+            <option value="Steinke">Steinke Mary</option>
+        </select>
+        </div>
+        </div>
+        </fieldset>
+
+        <fieldset data-action="js-form__trigger" data-trigger="select-time" data-target="js-schedule__custom">
+        <legend class="appointment__form--question">When would you like to come in?</legend>
+        <div class="form__radio-container">
+        
+        <input class="form__radio--input-time u-sr-only" id="asap" type="radio" name="massage type" value="asap" checked>
+        <label class="form__radio--label-time" for="asap">As Soon as Possible</label>
+        
+        <input class="form__radio--input-time u-sr-only" id="select-time" type="radio" name="massage type" value="select-time">
+        <label class="form__radio--label-time" for="select-time"><span>Select Time</span></label>
+        </div>
+
+        </fieldset>
+        <fieldset class="js-schedule__custom" hidden>
+        <legend class="select-time__label">Date</legend>
+        <label for="select-option" class="screen-reader-text">Select a Date</label>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+                <option value="friday">Friday – 30th November</option>
+                <option value="saturday">Saturday – 1st Demember</option>
+                <option value="sunday">Sunday – 2nd Demember</option>
+                <option value="monday">Monday – 3rd Demember</option>
+                <option value="tuesday">Tuesday – 4th Demember</option>
+                <option value="wednesday">Wednesday – 5th Demember</option>
+            </select>
+            </div>
+        </div>
+        </fieldset>
+        <fieldset class="js-schedule__custom" hidden>
+        <legend class="select-time__label">Time</legend>
+        <label for="select-option" class="screen-reader-text">Select a Date</label>
+        <div class="u-flex">
+            <div class="styled-select">
+            <select name="selected-option" id="select-option">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </div>
+        </div>
+        
+
+        </fieldset>
+
+        <div class="form__submit--container u-flex">
+        <input class="form__submit-button" type="submit" value="Book Appointment">
+        </div>
+    </form>
+    </section>
+  

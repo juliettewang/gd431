@@ -1,0 +1,125 @@
+// javascript action classes
+
+[data-visible="false"]{
+    display: none;
+}
+
+// button style
+
+.menu-icon {
+	&__line {
+		background-color: #5E5E5E;
+		height: 2px;
+		margin: 8px auto;
+		transition: all 0.3s ease-in-out;
+        width: 32px;
+    }
+}
+
+
+// base
+
+header.nav{
+    @media screen and (max-width: ($display-burger - 1px)) {
+    align-items: center;
+    background-color: #ffffff;
+    // box-shadow: 0 2px 8px 0 rgba(0,0,0,0.23);
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-mobile;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+}
+
+.nav__menu{
+
+    
+    &--trigger {
+        // base
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        // custom
+		padding: 1.5em;
+		text-align: center;
+        transition: all 0.2s ease-in-out;
+        
+        // transition
+
+        &[aria-expanded=true] {
+            .menu-icon__line{
+                &:nth-child(1){
+                    transform: translateY(10px) rotate(45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        @media screen and (min-width: $display-burger) {
+            display: none;
+        }
+
+    }
+	&--list {
+            // list styles
+            font-size: 0.9rem;
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+
+            @media screen and (min-width: $display-burger) {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: ($display-burger - 1px)) {
+            &[data-visible=true] {
+                $header-height: 83px;
+                background-color: white;
+                bottom: 0;
+                margin: 0;
+                padding-top: 2em;
+                position: fixed;
+                top: $header-height;
+                right: 0;
+                width: 100vw;
+            }
+            }
+
+	}
+}
+
+// link styles
+
+a.menu__link{
+    color: $color-black;
+    display: block;
+    font-weight: 400;
+    margin: 0 2.7rem 0 2.7rem;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        color: $color-green;
+      }
+
+    @media screen and (max-width: ($display-burger - 1px)) {
+        margin: 2.7rem auto 2.7rem auto;
+    }
+}
+
+.link__button--nav{
+
+    @media screen and (max-width: ($display-burger - 1px)) {
+    margin: 2.7rem auto 2.7rem auto;
+    }
+}
+

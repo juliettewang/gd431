@@ -1,0 +1,172 @@
+// Icons from the Noun Project
+// Pause by Uzeir Syarief; Previous by Edwin Prayogi M; Play by Imam Maulana
+// Utility classes
+// https://codepen.io/angeliquejw/pen/wEpvqN
+
+// if JS is turned off, don't display the images waiting to lazy load
+// user will see images within noscript instead
+
+// base
+
+.ourspace__heading{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery__title{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.gallery__eyebrow{
+    font-family: $font-condensed;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+        font-size: 0.8rem;
+    }
+    
+}
+
+// gallery
+
+.js-off {
+	.js-lazy,
+	.slideshow__controls {
+		display: none;
+	}
+}
+.slideshow {
+	background-color: #fff;
+	margin-bottom: 10vh;
+	margin-top: 5vh;
+	padding-bottom: 1%;
+	position: relative;
+    width: 75%;
+	@media screen and (max-width: 1080px) {
+		margin-bottom: 8vh;
+		margin-top: 2vh;
+		width: 90%;
+	}
+
+}
+.slideshow__list {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+.slideshow__list-item {
+	flex: 1 0 100%;
+	// max-width: 100vw;
+	max-width: 84%;
+	&[data-active="false"] {
+		display: none;
+	}
+	figure {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 70vh;
+		margin: 0;
+		width: 100%;
+
+		@media screen and (max-width: 700px) {
+			height: 35vh;
+		}
+
+	}
+}
+.slideshow__image {
+	height: auto;
+	max-height: 100%;
+	transition: filter 0.2s ease-in-out;
+	width: auto;
+	&[data-src] {
+		filter: blur(3px);
+		height: 50%;
+		width: 50%;
+	}
+}
+.slideshow__caption {
+	bottom: -5%;
+	color: $color-black;
+	position: absolute;
+	text-align: center;
+	width: 85%;
+}
+.slideshow__button {
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+	svg {
+		fill: $color-black;
+		height: 36px;
+		transition: all 0.3s ease-in-out;
+		width: 36px;
+	}
+	&:hover {
+		svg {
+			fill: rgba($color-black, 0.6);
+		}
+	}
+	&:focus {
+        background-color: rgba($color-black, 0.1);
+		// background-color: rgba(black, 0.5);
+		// outline: 1px dashed rgba(white, 0.5);
+		svg {
+			fill: rgba($color-black, 0.6);
+		}
+	}
+
+	&[data-action="previous"],
+	&[data-action="next"] {
+		height: 100%;
+		display: flex;
+		padding-left: 1%;
+		padding-right: 1%;
+		top: 0;
+		width: 8%;
+		@media screen and (max-width: 700px) {
+			height: 90%;
+		}
+		// for next and pause button not to overlap
+	}
+	&[data-action="previous"] {
+		left: 0;
+	}
+	&[data-action="next"] {
+		right: 0;
+	}
+	&[data-action="play"],
+	&[data-action="pause"] {
+		right: 10%;
+		bottom: -5%;
+		svg {
+			height: 20px;
+			width: 20px;
+		}
+
+		@media screen and (max-width: 700px) {
+			right: 0%;
+		}
+		
+
+	}
+	&[data-action="play"] {
+		.icon--pause {
+			display: none;
+		}
+	}
+	&[data-action="pause"] {
+		.icon--play {
+			display: none;
+		}
+	}
+}

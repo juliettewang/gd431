@@ -1,0 +1,111 @@
+// scss variables
+
+$color-black: #454545;
+$color-grey: #7A7A7A;
+$color-green: #608B10;
+$color-green-dark: #486B08;
+$color-green-light: #6D9E11;
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-condensed: 'Open Sans Condensed', sans-serif;
+$font-serif: 'Crimson Text', serif;
+$padding-mobile: 1rem;
+
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+
+
+// base
+
+html{
+    box-sizing: border-box;
+  }
+
+*{
+  transition: all 0.2s ease-in-out;
+}  
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: $font-sans-serif;
+    color: $color-black;
+    position: relative;
+    margin: 0;
+}
+
+legend {
+  display: block;
+  padding: 0;
+  display: table;
+}
+
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 7vh 0 7vh 0;
+  min-width: 0;
+}
+
+
+// type bases
+
+h1,h3{
+  font-family: $font-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0.7rem;
+
+  @media only screen and (max-width: 500px){
+    font-size: 2.2rem;
+  }
+}
+
+h2{
+  color: $color-green;
+  font-family: $font-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0.8rem auto 0.8rem auto;
+}
+
+p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+a{
+  color: $color-green;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover, &:focus{
+    color: rgba($color-green, 10%);
+  }
+}
+
+// base button
+
+.link__button{
+  border: 0.1rem solid $color-green;
+  color: $color-green;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1.3rem;
+  padding: 0.6rem;
+  text-decoration: none;
+  width: 11rem;
+
+  &:hover, &:focus{
+      color: darken($color-green,7);
+      border: 0.1rem solid darken($color-green,7);
+    }
+}

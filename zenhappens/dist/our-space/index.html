@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Crimson+Text:400,600|Open+Sans:400,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Space |  Zen Happens</title>
+</head>
+<body>
+ 
+<header class="nav">
+        <div class="logo--combined">
+        
+            <div class="logo__container"><a href="/"><img class="logo--icon" src="/images/zenhappens_logo.png" alt="Zen Happen's Logo."></a></div>
+            <div class="logo__container"><a class="logo__wordmark" href="/">Zen Happens</a></div>  
+        </div>
+    <nav class="nav__menu">
+        <button type="button" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset nav__menu--trigger">
+			<span aria-hidden="true" class="menu-icon">
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+			</span>
+		</button>
+
+        <ul id="js-site-nav" class="nav__menu--list nav__links" aria-hidden="false" data-visible="false">
+            <li><a class="menu__link" href="/">Our Team</a></li>
+            <li><a class="menu__link" href="/our-space">Our Space</a></li>
+            <li><a class="menu__link" href="/services">Services</a></li>
+            <li><a class="menu__link" href="/">Contact Us</a></li>
+            <li><a class="link__button link__button--nav" href="/book-appointment">Book Online</a></li>
+            <li><a class="link__button link__button--nav" href="/">Gift Cards</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="ourspace__heading">
+    <h1 id ="slideshow-label" class="gallery__title">Our Space</h1>
+    <p class="gallery__eyebrow">Zen Happens in Lauraville</p>
+</section>
+
+<svg style="display:none;">
+	<symbol id="icon--next" width="14" height="24" aria-labelledby="title--next" xmlns="http://www.w3.org/2000/svg">
+	<title id="title--next">Next</title>
+  <path d="M1.5 17.5l7-8-7-8" stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd"/>
+	</symbol>
+
+	<symbol id="icon--prev" width="14" height="24" aria-labelledby="title--prev" xmlns="http://www.w3.org/2000/svg">
+	<title id="title--prev">Previous</title>
+  <path d="M8.5 1.5l-7 8 7 8" stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd"/>
+	</symbol>
+
+	<symbol id="icon--pause" width="11" height="19" aria-labelledby="title--pause" xmlns="http://www.w3.org/2000/svg">
+  <title id="title--pause">Pause</title>
+	<g stroke="#454545" stroke-width="2" fill="none" fill-rule="evenodd">
+    <path d="M1.5.063v18M9.5.063v18"/>
+  </g>
+</symbol>
+
+	<symbol id="icon--play"width="14" height="18" aria-labelledby="title--play" xmlns="http://www.w3.org/2000/svg">
+		<title id="title--play">Play</title>
+		<path d="M0 18l14-9L0 0z" fill="#454545" fill-rule="evenodd"/>
+	</symbol>
+
+</svg>
+
+<section id="js-slideshow" aria-labelledby="slideshow-label" aria-live="off" class="u-mx-auto slideshow">
+	<div class="u-mx-auto slideshow__container">
+		<ul class="u-fit u-list-reset slideshow__list">
+			<li class="js-slideshow-slide slideshow__list-item">
+					<figure>
+						<img data-src="/images/gallery/ourspace_01--original.png" src="/images/gallery/ourspace_01--tiny.png" alt="Products sold at our store."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_01--original.png" alt="Products sold at our store." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Natural products sold at our store.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_02--original.png" src="/images/gallery/ourspace_02--tiny.png" alt="Thai Massage at Zen Happens."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_02--original.png" alt="Thai Massage at Zen Happens." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">We offer Thai Massage at Zen Happens!</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_03--original.png" src="/images/gallery/ourspace_03--tiny.png" alt="Aromatherapy Products."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_03--original.png" alt="Aromatherapy Products." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Aromatherapy Products in our store.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_04--original.png" src="/images/gallery/ourspace_04--tiny.png" alt="Brush, flowers, eyemask on robe and towels."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_04--original.png" alt="Brush, flowers, eyemask on robe and towels." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">We provide robes and make it the best experience.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_05--original.png" src="/images/gallery/ourspace_05--tiny.png" alt="Mandala Artwork by Robert Selsor hung in Our Space."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_05--original.png" alt="Mandala Artwork by Robert Selsor hung in Our Space." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Beautiful Artwork by Robert Selsor hung up in our space.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_06--original.png" src="/images/gallery/ourspace_06--tiny.png" alt="Our cozy lobby with Sofas and plant."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_06--original.png" alt="Our cozy lobby with Sofas and plant." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Chill in our cozy lobby while you wait for your appointment.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_07--original.png" src="/images/gallery/ourspace_07--tiny.png" alt="Our Massage Room with a bed and plant."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_07--original.png" alt="Our Massage Room with a bed and plant." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">One of our Cozy massage therapy room.</figcaption>
+					</figure>
+			</li>
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_08--original.png" src="/images/gallery/ourspace_08--tiny.png" alt="Our Cozy Zen Happens Lobby."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_08--original.png" alt="Our Cozy Zen Happens Lobby." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Chill in our cozy lobby while you wait for your appointment.</figcaption>
+					</figure>
+			</li>
+
+			<li class="js-slideshow-slide slideshow__list-item">
+				<figure>
+						<img data-src="/images/gallery/ourspace_09--original.png" src="/images/gallery/ourspace_09--tiny.png" alt="Plant next to bowl of soap in atmospheric space."
+						 class="js-lazy u-fit slideshow__image">
+						<noscript>
+              <img src="/images/gallery/ourspace_09--original.png" alt="Plant next to bowl of soap in atmospheric space." class="u-fit">
+            </noscript>
+						<figcaption class="slideshow__caption">Setting the mood as you get your massage therapy.</figcaption>
+					</figure>
+			</li>
+
+		</ul>
+	</div>
+	<ul class="u-list-reset slideshow__controls" aria-label="Slideshow controls.">
+		<li>
+			<button id="slideshow__button--pause" class="js-slideshow-button u-button-reset slideshow__button" aria-label="pause" data-action="pause" type="button">
+      	<svg aria-hidden="true" class="icon--pause" focusable="false"><use xlink:href="#icon--pause"></use></svg>
+      	<svg aria-hidden="true" class="icon--play" focusable="false"><use xlink:href="#icon--play"></use></svg>
+			</button>
+		</li>
+		<li>
+			<button id="slideshow__button--previous" class="js-slideshow-button u-button-reset slideshow__button" aria-label="previous" data-action="previous" type="button">
+      	<svg aria-hidden="true" focusable="false"><use xlink:href="#icon--prev"></use></svg>
+			</button>
+		</li>
+		<li>
+			<button id="slideshow__button--next" class="js-slideshow-button u-button-reset slideshow__button" aria-label="next" data-action="next" type="button">
+				<svg aria-hidden="true" focusable="false"><use xlink:href="#icon--next"/></svg>
+			</button>
+		</li>
+	</ul>
+</section>
+
+    <footer>
+        <div class="footer__container">
+        <div class="footer__logo">
+            <p class="logo__wordmark--footer">Zen Happens</p>
+            <p class="logo--tagline">Massage & Wellness</p>
+            <div class="footer__social">
+                <ul class="social-icons">
+                    <li><a href="https://www.yelp.com/biz/zen-happens-massage-and-wellness-baltimore"><img src="/images/icon-yelp.svg" alt="Yelp icon."></a></li>
+                    <li><a href="https://www.facebook.com/zenhappensincharmcity"><img src="/images/icon-fb.svg" alt="Facebook icon."></a></li>
+                    <li><a href="https://www.instagram.com/zen_happens/"><img class="socialicon__align" src="/images/icon-insta.svg" alt="Instagram icon."></a></li>
+                </ul> 
+            </div>
+        </div>
+        <address class="footer__contact">
+                <p>4337 Harford Rd <br>
+                Baltimore, MD 21214 <br>
+                <a href="tel:+14107460499">410-746-0499</a><br>
+                <a href="mailto:ZenHappens@gmail.com">ZenHappens@gmail.com</a></p>
+        </address>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2018 by Zen Happens Massage and Wellness. </p>
+            <a class="link__small" href="/zenhappens/index.html">Policies & Procedures</a>
+        </div>
+    </footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/js/menu.min.js"></script>
+
+  <script type="text/javascript" src="/js/gallery.min.js"></script>
+
+
+</body>
+</html>

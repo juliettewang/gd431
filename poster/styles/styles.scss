@@ -109,7 +109,7 @@ a{
   text-transform: uppercase;
 
   &:hover, &:focus{
-    color: rgba($color-red, 10%);
+    color: $color-red;
   }
 
   @media only screen and (min-width: 900px){

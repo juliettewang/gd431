@@ -1,0 +1,267 @@
+// form base
+
+.appointment__form{
+    margin: 5vw 7vw 5vw 7vw;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+    display: table-cell;
+  }
+
+// radio form styles
+
+.appointment__form--question{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.2rem auto 1.2rem auto;
+    text-align: center;
+}
+
+.form__radio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form__radio--label{
+    border: 1px solid $color-black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 1em;
+    padding: 1.1em;
+    text-align: center;
+    width: 14em;
+
+    &:hover{
+        background-color: $color-green;
+        color: #fff;
+        
+    }
+}
+
+.form__radio--input:checked + .form__radio--label {
+    background: $color-green-light;
+    border: 1px solid $color-green-light;
+    color: #fff;
+}
+
+.form__radio--input:focus + .form__radio--label {
+    background: $color-green-light;
+    border: 1px solid $color-green-light;
+    color: #fff;
+	font-weight: 600;
+}
+
+
+// range selector input styles
+
+.form__range-container{
+    margin: 1.5em ;
+}
+
+// mixins
+
+@mixin rangeThumb {
+    background: $color-green;
+    border: 0 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.563em;
+    margin: -9px 0 0 0;
+    width: 1.563em;
+
+    @media screen and (max-width: 620px) {
+        height: 1em;
+        margin-top: -4px;
+        width: 1em; 
+    }
+  }
+
+@mixin rangeTrack {
+    background: #F1F1F1;
+    border-radius: 2.5em;
+    cursor: pointer;
+    height: 10px;
+    margin: -4px 0 0 0;
+    width: 100%;
+}
+
+// range style
+
+.range {
+    border-radius: 1em;
+    height: 10px;
+    position: relative;
+    width: 34.375em;
+    @media screen and (max-width: 620px) {
+        width: 19.5em; 
+    }
+
+}
+
+.range input {
+    width: 100%;
+    position: absolute;
+    top: 9.5px;
+    height: 0;
+    -webkit-appearance: none;
+  
+    // Thumb
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // needed again for Chrome & Safari
+      @include rangeThumb;
+    }
+  
+    &::-moz-range-thumb {
+      @include rangeThumb;
+    }
+  
+    &::-ms-thumb {
+      @include rangeThumb;
+    }
+    
+    // Track
+    &::-webkit-slider-runnable-track {
+        @include rangeTrack;
+    }
+
+    &::-moz-range-track {
+        @include rangeTrack;
+    }
+
+    &::-ms-track {
+        @include rangeTrack;
+    }
+
+    &:focus { // override outline/background on focus
+        background: none;
+        outline: none;
+    }
+
+    &::-ms-track { // A little something for IE
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+}
+
+// label below slider style
+
+.range-labels {
+    margin: 18px -41px 0;
+    padding: 0;
+    list-style: none;
+
+    @media screen and (max-width: 620px) {
+        margin: 18px -18px 0;
+    }
+    
+    li {
+      position: relative;
+      float: left;
+      width: 90px;
+      text-align: center;
+      color: $color-black;
+      font-size: 0.8rem;
+      cursor: pointer;
+
+      @media screen and (max-width: 620px) {
+        width: 49.5px;
+      }
+      
+      
+      &::before {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        left: 0;
+        content: "";
+        margin: 0 auto;
+        width: 9px;
+        height: 9px;
+        background: $color-green-dark;
+        border-radius: 50%;
+        
+      }
+    }
+    
+    .active {
+      color: $color-green;
+      font-weight: 600;
+    }
+    
+    .selected::before {
+      background: $color-green;
+    }
+    
+    .active.selected::before {
+      display: none;
+    }
+  }
+
+//   select dropdown
+
+@import 'select-dropdown';
+
+// time select radio button style
+
+.select-time__margin{
+    margin: 0.5em;
+}
+
+.select-time__label{
+    color: #454545;
+    font-size: 0.9rem;
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+.form__radio--label-time{
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 20em;
+
+    &:hover{
+        background: rgba(109,158,17,0.38);
+    border: 1px solid #6D9E11;
+        
+    }
+}
+
+.form__radio--input-time:checked + .form__radio--label-time {
+    background: rgba(109,158,17,0.38);
+    border: 1px solid #6D9E11;
+}
+
+.form__radio--input-time:focus + .form__radio--label-time {
+    background: rgba(109,158,17,0.38);
+    border: 1px solid #6D9E11;
+	font-weight: 600;
+}
+
+
+
+//   submit button style
+
+.form__submit-button{
+    background: #6D9E11;
+    border: 1px solid #6D9E11; 
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 32px;
+    margin: auto;
+    padding: 0.4em 3em;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+// menu nav vars
+
+$display-burger: 1100px;
+
+// Header Elements
+
+.logo--combined{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: ($display-burger - 1px)){
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+.logo--icon{
+    width: 3.5rem;
+
+    @media screen and (max-width: ($display-burger - 1px)){
+    width: 2.5rem;
+    }
+}
+
+
+.logo__wordmark{
+    color: $color-green;
+    font-family: $font-serif;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: ($display-burger - 1px)){
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    }
+}
+
+.burgermenu{
+    width: 1.5rem;
+    margin: 0.5rem;
+}
+
+

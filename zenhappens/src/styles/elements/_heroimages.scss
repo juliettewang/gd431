@@ -1,0 +1,119 @@
+// homepage heros
+
+.landing__hero{
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("/images/zenhappens_landinghero-cropped.png");
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+    flex-direction: column;
+    height: 35rem;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+}
+
+.landing__text{
+    max-width: 40rem;
+}
+
+.link__button--hero{
+    border: 0.1rem solid #ffffff;
+    color: #ffffff;
+
+    &:hover, &:focus{
+        color: rgba(#ffffff,.8);
+        border: 0.1rem solid rgba(#ffffff,.8);
+      }
+}
+
+.specialoffer{
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("/images/daveandrachel-full.png");
+    background-position: 25% bottom;
+    background-repeat: no-repeat;
+    background-size: 250%;
+	display: flex;
+    flex-direction: column;
+    height: 27em;
+    justify-content: center;
+    margin: $padding-mobile;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+
+    @media screen and (min-width: 500px) {
+        background-size: cover;
+        background-position: center;
+        height: 34em;
+        margin: 2em 5vw 2em 5vw;
+    }
+
+    @media screen and (min-width: 1000px) {
+        height: 30em;
+        margin-right: 7vw;
+        margin-left: 7vw;
+    }
+}
+
+.eyebrow--onimage{
+    font-family: $font-condensed;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+        font-size: 1rem;
+    }
+    
+}
+
+// book an appointment
+
+.appointment__hero{
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("/images/appointment-massage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+
+    @media screen and (max-width: 500px) {
+        background-position: 40%;
+    }
+}
+
+// services
+
+.services__hero{
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("/images/service-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0.12rem 1.3rem rgba(0,0,0,0.8);
+
+    @media screen and (max-width: 500px) {
+        background-position: 40%;
+    }
+}
